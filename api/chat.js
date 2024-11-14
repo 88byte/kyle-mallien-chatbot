@@ -6,6 +6,17 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 export default async function handler(req, res) {
+    // Set CORS headers
+    res.setHeader("Access-Control-Allow-Origin", "*"); // Allow all origins or replace * with 'https://88byte.github.io' for specific origin
+    res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+    // Handle preflight request (OPTIONS method)
+    if (req.method === 'OPTIONS') {
+        res.status(200).end();
+        return;
+    }
+
     if (req.method === 'POST') {
         try {
             const { messages, model, max_tokens } = req.body;
