@@ -51,7 +51,7 @@ document.getElementById('submit-btn').addEventListener('click', async () => {
 
     try {
         // Fetch response from OpenAI API for non-program questions
-        const response = await fetch('https://api.openai.com/v1/chat/completions', {
+        const response = await fetch('https://kyle-mallien-chatbot.vercel.app/api/chat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
