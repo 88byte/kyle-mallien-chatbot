@@ -1,0 +1,76 @@
+import { CheckCircle2 } from "lucide-react";
+import { BRAND } from "@/lib/site";
+import { Reveal } from "./reveal";
+
+const POINTS = [
+  "Manages 20+ active companies with $100M+ under management",
+  "Mentored 500+ entrepreneurs to $170M+ in acquisitions",
+  "Builds his team from within — students return as mentors",
+  "Shares the real playbook, including the losses, not just the wins",
+];
+
+export function About() {
+  return (
+    <section id="about" className="relative py-24 sm:py-32">
+      <div className="container-tight grid items-center gap-14 lg:grid-cols-2">
+        <Reveal className="relative order-2 lg:order-1">
+          <div className="relative mx-auto max-w-md">
+            <div className="absolute -inset-4 rounded-[2rem] bg-gold-gradient opacity-20 blur-2xl" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-card">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={BRAND.portrait}
+                alt="Kyle Mallien"
+                className="w-full object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-6 -right-2 rounded-2xl border border-gold-500/30 bg-background/90 px-6 py-4 shadow-xl backdrop-blur sm:-right-6">
+              <div className="font-serif text-3xl font-semibold text-gradient-gold">
+                #1465
+              </div>
+              <div className="text-xs text-foreground/55">
+                INC 5000 fastest-growing
+              </div>
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.1} className="order-1 lg:order-2">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">
+            Meet Kyle Mallien
+          </p>
+          <h2 className="font-serif text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">
+            An investor who built the path he now teaches.
+          </h2>
+          <div className="mt-6 space-y-4 text-foreground/70">
+            <p>
+              Kyle Mallien is an investor, author, and fund manager who turned
+              business acquisition into a force multiplier for wealth — and then
+              opened the playbook to everyone else. Recognized by INC 5000 and
+              named to the San Diego Business Journal&apos;s Top 40 Under 40, he
+              now mentors a community of owners doing real deals.
+            </p>
+            <p>
+              His philosophy is simple: don&apos;t gamble years starting
+              something new when you can buy a business that already works,
+              already pays, and is ready to scale. Then stack acquisitions into
+              a portfolio that builds generational wealth.
+            </p>
+          </div>
+
+          <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+            {POINTS.map((point) => (
+              <li key={point} className="flex items-start gap-2.5">
+                <CheckCircle2
+                  size={18}
+                  className="mt-0.5 shrink-0 text-gold-400"
+                />
+                <span className="text-sm text-foreground/75">{point}</span>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+      </div>
+    </section>
+  );
+}

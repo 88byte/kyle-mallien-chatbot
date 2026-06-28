@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Black + champagne-gold luxury theme (dark by default) */
+    --background: 0 0% 4%;
+    --foreground: 40 30% 96%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 40 30% 96%;
+
+    --primary: 41 55% 57%;
+    --primary-foreground: 0 0% 6%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 40 30% 96%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 40 8% 64%;
+
+    --accent: 41 55% 57%;
+    --accent-foreground: 0 0% 6%;
+
+    --border: 40 14% 18%;
+    --input: 40 14% 18%;
+    --ring: 41 55% 57%;
+
+    --radius: 0.85rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01", "cv01";
+  }
+
+  ::selection {
+    background-color: hsl(var(--primary) / 0.3);
+  }
+}
+
+@layer components {
+  .text-gradient-gold {
+    @apply bg-gold-text bg-clip-text text-transparent;
+  }
+
+  .container-tight {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+
+  /* Subtle grain / vignette for depth */
+  .luxe-vignette {
+    background:
+      radial-gradient(120% 80% at 50% 0%, hsl(41 55% 57% / 0.08), transparent 60%),
+      radial-gradient(80% 60% at 50% 100%, hsl(41 55% 30% / 0.06), transparent 55%);
+  }
+
+  .hairline {
+    @apply border-t border-white/5;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(0 0% 6%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(41 30% 30%);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(41 45% 45%);
+}

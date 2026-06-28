@@ -1,0 +1,29 @@
+import { Navbar } from "@/components/site/navbar";
+import { Hero } from "@/components/site/hero";
+import { Accolades } from "@/components/site/accolades";
+import { About } from "@/components/site/about";
+import { Method } from "@/components/site/method";
+import { Programs } from "@/components/site/programs";
+import { Results } from "@/components/site/results";
+import { Testimonials } from "@/components/site/testimonials";
+import { CTA } from "@/components/site/cta";
+import { Footer } from "@/components/site/footer";
+import { ChatWidget } from "@/components/site/chat-widget";
+
+export default function Home() {
+  return (
+    <main className="relative min-h-screen">
+      <Navbar />
+      <Hero />
+      <Accolades />
+      <About />
+      <Method />
+      <Programs />
+      <Results />
+      <Testimonials />
+      <CTA />
+      <Footer />
+      <ChatWidget />
+    </main>
+  );
+}
