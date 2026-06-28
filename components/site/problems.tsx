@@ -1,6 +1,7 @@
 import { TrendingUp, Receipt } from "lucide-react";
 import { PROBLEMS } from "@/lib/site";
 import { Reveal } from "./reveal";
+import { SectionEyebrow } from "./section-eyebrow";
 
 const ICONS = [TrendingUp, Receipt];
 
@@ -9,10 +10,8 @@ export function Problems() {
     <section className="relative border-y border-white/5 bg-white/[0.02] py-16 sm:py-28">
       <div className="container-tight">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">
-            The real question
-          </p>
-          <h2 className="font-serif text-3xl font-semibold tracking-tight sm:text-5xl">
+          <SectionEyebrow center>The real question</SectionEyebrow>
+          <h2 className="font-serif text-3xl font-medium tracking-tight sm:text-5xl">
             Everyone has either an income problem or a tax problem
           </h2>
           <p className="mt-5 text-foreground/65">

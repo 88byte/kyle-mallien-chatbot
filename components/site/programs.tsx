@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { BRAND, PROGRAMS } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import { Reveal } from "./reveal";
+import { SectionEyebrow } from "./section-eyebrow";
 
 export function Programs() {
   return (
@@ -10,10 +11,8 @@ export function Programs() {
       <div className="pointer-events-none absolute left-1/2 top-1/3 h-[400px] w-[700px] -translate-x-1/2 rounded-full bg-gold-600/5 blur-[150px]" />
       <div className="container-tight relative">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">
-            Ways to work together
-          </p>
-          <h2 className="font-serif text-3xl font-semibold tracking-tight sm:text-5xl">
+          <SectionEyebrow center>Ways to work together</SectionEyebrow>
+          <h2 className="font-serif text-3xl font-medium tracking-tight sm:text-5xl">
             Choose your path to ownership
           </h2>
           <p className="mt-5 text-foreground/65">

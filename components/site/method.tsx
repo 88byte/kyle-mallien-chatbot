@@ -1,5 +1,6 @@
 import { PILLARS } from "@/lib/site";
 import { Reveal } from "./reveal";
+import { SectionEyebrow } from "./section-eyebrow";
 
 export function Method() {
   return (
@@ -15,10 +16,8 @@ export function Method() {
     >
       <div className="container-tight">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">
-            The Process
-          </p>
-          <h2 className="font-serif text-3xl font-semibold tracking-tight sm:text-5xl">
+          <SectionEyebrow center>The Process</SectionEyebrow>
+          <h2 className="font-serif text-3xl font-medium tracking-tight sm:text-5xl">
             The F.U.E.L Process
           </h2>
           <p className="mt-5 text-foreground/65">

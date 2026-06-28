@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Play } from "lucide-react";
 import { BRAND } from "@/lib/site";
 import { Reveal } from "./reveal";
+import { SectionEyebrow } from "./section-eyebrow";
 
 export function VideoSection() {
   const [playing, setPlaying] = useState(false);
@@ -11,10 +12,8 @@ export function VideoSection() {
     <section id="video" className="relative py-20 sm:py-28">
       <div className="container-tight">
         <Reveal className="mx-auto mb-12 max-w-2xl text-center">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-gold-400">
-            Watch
-          </p>
-          <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">
+          <SectionEyebrow center>Watch</SectionEyebrow>
+          <h2 className="font-serif text-3xl font-medium tracking-tight sm:text-4xl">
             Why don&apos;t they teach us this?
           </h2>
           <p className="mt-4 text-foreground/65">

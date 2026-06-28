@@ -1,6 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import { BRAND } from "@/lib/site";
 import { Reveal } from "./reveal";
+import { SectionEyebrow } from "./section-eyebrow";
 
 const POINTS = [
   "Mentored 250+ students into business ownership",
@@ -36,10 +37,8 @@ export function About() {
         </Reveal>
 
         <Reveal delay={0.1} className="order-1 lg:order-2">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">
-            Meet Kyle Mallien
-          </p>
-          <h2 className="font-serif text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">
+          <SectionEyebrow>Meet Kyle Mallien</SectionEyebrow>
+          <h2 className="font-serif text-3xl font-medium leading-tight tracking-tight sm:text-5xl">
             An investor who built the path he now teaches.
           </h2>
           <div className="mt-6 space-y-4 text-foreground/70">

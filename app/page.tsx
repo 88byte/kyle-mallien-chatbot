@@ -6,6 +6,7 @@ import { About } from "@/components/site/about";
 import { Problems } from "@/components/site/problems";
 import { Method } from "@/components/site/method";
 import { Programs } from "@/components/site/programs";
+import { QuoteBand } from "@/components/site/quote-band";
 import { Results } from "@/components/site/results";
 import { Community } from "@/components/site/community";
 import { Testimonials } from "@/components/site/testimonials";
@@ -25,6 +26,7 @@ export default function Home() {
       <Problems />
       <Method />
       <Programs />
+      <QuoteBand />
       <Results />
       <Community />
       <Testimonials />
