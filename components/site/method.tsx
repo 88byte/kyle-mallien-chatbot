@@ -3,7 +3,17 @@ import { Reveal } from "./reveal";
 
 export function Method() {
   return (
-    <section id="fuel" className="relative py-24 sm:py-28">
+    <section
+      id="fuel"
+      className="relative overflow-hidden py-16 sm:py-24"
+      style={{
+        backgroundImage:
+          "linear-gradient(to bottom, rgba(8,8,8,0.97), rgba(10,9,8,0.9) 50%, rgba(8,8,8,0.98)), url(/img/fuel-bg.webp)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
+    >
       <div className="container-tight">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">

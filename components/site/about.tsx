@@ -11,7 +11,7 @@ const POINTS = [
 
 export function About() {
   return (
-    <section id="about" className="relative py-24 sm:py-32">
+    <section id="about" className="relative py-16 sm:py-28">
       <div className="container-tight grid items-center gap-14 lg:grid-cols-2">
         <Reveal className="relative order-2 lg:order-1">
           <div className="relative mx-auto max-w-md">

@@ -6,7 +6,7 @@ import { Reveal } from "./reveal";
 
 export function Programs() {
   return (
-    <section id="programs" className="relative py-24 sm:py-32">
+    <section id="programs" className="relative py-16 sm:py-28">
       <div className="pointer-events-none absolute left-1/2 top-1/3 h-[400px] w-[700px] -translate-x-1/2 rounded-full bg-gold-600/5 blur-[150px]" />
       <div className="container-tight relative">
         <Reveal className="mx-auto max-w-2xl text-center">

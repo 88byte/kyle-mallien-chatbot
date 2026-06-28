@@ -59,6 +59,11 @@
     scroll-behavior: smooth;
   }
 
+  /* Offset anchored sections for the fixed navbar */
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-feature-settings: "ss01", "cv01";

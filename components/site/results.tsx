@@ -3,7 +3,7 @@ import { Reveal } from "./reveal";
 
 export function Results() {
   return (
-    <section id="results" className="relative py-24 sm:py-28">
+    <section id="results" className="relative py-16 sm:py-24">
       <div className="container-tight">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">

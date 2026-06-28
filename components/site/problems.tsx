@@ -6,7 +6,7 @@ const ICONS = [TrendingUp, Receipt];
 
 export function Problems() {
   return (
-    <section className="relative py-24 sm:py-28">
+    <section className="relative border-y border-white/5 bg-white/[0.02] py-16 sm:py-28">
       <div className="container-tight">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">

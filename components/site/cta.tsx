@@ -6,7 +6,7 @@ import { BRAND, FINAL_CTA } from "@/lib/site";
 
 export function CTA() {
   return (
-    <section className="relative py-24 sm:py-32">
+    <section className="relative py-16 sm:py-28">
       <div className="container-tight">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

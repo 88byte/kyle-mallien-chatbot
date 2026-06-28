@@ -21,7 +21,7 @@ const COMMUNITY_STATS = [
 
 export function Community() {
   return (
-    <section className="relative py-24 sm:py-28">
+    <section className="relative py-16 sm:py-24">
       <div className="container-tight">
         <Reveal>
           <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-gradient-to-br from-card/80 to-background p-8 sm:p-14">

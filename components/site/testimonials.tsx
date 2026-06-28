@@ -11,7 +11,13 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative overflow-hidden bg-background py-24 sm:py-32"
+      className="relative overflow-hidden py-16 sm:py-28"
+      style={{
+        backgroundImage:
+          "linear-gradient(to bottom, rgba(8,8,8,0.96), rgba(10,14,18,0.92), rgba(8,8,8,0.97)), url(/img/feedback-bg.webp)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       <div className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-gold-500/[0.07] blur-[150px]" />
       <div className="container-tight relative z-10">
