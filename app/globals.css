@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Brand fonts (self-hosted from kylemallien.com) ───────────────── */
+@font-face {
+  font-family: "Ailerons";
+  src: url("/fonts/ailerons.woff2") format("woff2");
+  font-weight: 100 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Asterone";
+  src: url("/fonts/asterone.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gill Sans Web";
+  src: url("/fonts/gilsans.woff2") format("woff2");
+  font-weight: 100 700;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     /* Brand theme sampled from kylemallien.com (dark by default) */
@@ -58,10 +78,11 @@
     border-radius: 4px;
   }
 
-  /* Display headings: Cormorant reads best a touch tighter */
+  /* Ailerons is a wide, thin display face — give it room to breathe */
   h1,
   h2 {
-    letter-spacing: -0.01em;
+    letter-spacing: 0.01em;
+    font-weight: 400;
   }
 }
 

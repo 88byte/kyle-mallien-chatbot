@@ -61,8 +61,10 @@ const config: Config = {
         },
       },
       fontFamily: {
-        serif: ["var(--font-serif)", "Cormorant", "Georgia", "serif"],
-        sans: ["var(--font-sans)", "Montserrat", "system-ui", "sans-serif"],
+        // Ailerons = brand display face; Gill Sans = brand body face
+        serif: ["var(--font-serif)", "Ailerons", "sans-serif"],
+        sans: ["var(--font-sans)", "Gill Sans", "Helvetica Neue", "sans-serif"],
+        display: ["Asterone", "var(--font-serif)", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

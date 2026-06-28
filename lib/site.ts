@@ -7,10 +7,9 @@
 export const BRAND = {
   name: "Kyle Mallien",
   tagline: "Author + Investor + Business Strategist + Mentor",
-  logo:
-    "https://kylemallien.com/wp-content/uploads/2023/12/Stacked-Primary-Logo-without-Subline-Full-Gradient-on-Black.png",
-  portrait:
-    "https://kylemallien.com/wp-content/uploads/2024/01/business-strategist-kyle-mobile.png",
+  logo: "/img/logo-stacked.png",
+  portrait: "/img/kyle-strategist.png",
+  aboutPhoto: "/img/kyle-about.jpg",
   applyUrl: "https://kylemallien.com/work-with-me/",
   callUrl: "https://kylemallien.com/work-with-me/",
   successUrl: "https://kylemallien.com/success-stories/",

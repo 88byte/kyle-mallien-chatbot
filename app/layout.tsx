@@ -40,22 +40,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
         <style
           dangerouslySetInnerHTML={{
             __html: `
               :root {
-                --font-sans: 'Montserrat', system-ui, sans-serif;
-                --font-serif: 'Cormorant', Georgia, serif;
+                --font-sans: 'Gill Sans Web', 'Gill Sans', 'Gill Sans MT', 'Helvetica Neue', system-ui, sans-serif;
+                --font-serif: 'Ailerons', 'Gill Sans Web', system-ui, sans-serif;
               }
             `,
           }}

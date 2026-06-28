@@ -19,7 +19,7 @@ export function About() {
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-card">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={BRAND.portrait}
+                src={BRAND.aboutPhoto}
                 alt="Kyle Mallien"
                 className="w-full object-cover"
               />
