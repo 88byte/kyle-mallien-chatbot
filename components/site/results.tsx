@@ -13,7 +13,7 @@ export function Results() {
             The numbers members are putting up
           </h2>
           <p className="mt-5 text-foreground/65">
-            Not theory — deals closed by everyday people who decided to own
+            Not theory. Deals closed by everyday people who decided to own
             instead of start over.
           </p>
         </Reveal>

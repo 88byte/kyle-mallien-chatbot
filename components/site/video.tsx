@@ -18,36 +18,35 @@ export function VideoSection() {
             Why don&apos;t they teach us this?
           </h2>
           <p className="mt-4 text-foreground/65">
-            A short introduction to acquisition — and why it&apos;s the fastest
+            A short introduction to acquisition, and why it&apos;s the fastest
             path most professionals never hear about.
           </p>
         </Reveal>
 
         <Reveal delay={0.1}>
-          {/* Vertical (9:16) video — sized as a phone, centered */}
-          <div className="relative mx-auto aspect-[9/16] w-full max-w-[360px] overflow-hidden rounded-[2rem] border border-gold-500/25 shadow-2xl shadow-black/60">
+          {/* 16:9 landscape video, standard responsive embed */}
+          <div className="relative mx-auto aspect-video w-full max-w-3xl overflow-hidden rounded-2xl border border-gold-500/25 shadow-2xl shadow-black/60">
             {playing ? (
               <iframe
-                src={`https://player.vimeo.com/video/${BRAND.vimeoId}?autoplay=1&title=0&byline=0&portrait=0`}
+                src={`https://player.vimeo.com/video/${BRAND.vimeoId}?autoplay=1&title=0&byline=0&portrait=0&dnt=1`}
                 title="Kyle Mallien"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
-                className="h-full w-full"
+                className="absolute inset-0 h-full w-full"
               />
             ) : (
               <button
                 onClick={() => setPlaying(true)}
                 aria-label="Play video"
-                className="group relative h-full w-full"
+                className="group absolute inset-0 h-full w-full"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={BRAND.portrait}
-                  alt="Kyle Mallien"
+                  src={BRAND.heroPhoto}
+                  alt="Kyle Mallien speaking"
                   loading="lazy"
-                  className="h-full w-full object-cover object-top brightness-[0.75] transition-all group-hover:brightness-[0.6]"
+                  className="h-full w-full object-cover brightness-[0.7] transition-all group-hover:brightness-[0.55]"
                 />
-                <span className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent" />
                 <span className="absolute inset-0 flex items-center justify-center">
                   <span className="flex h-[72px] w-[72px] items-center justify-center rounded-full bg-gold-gradient shadow-xl transition-transform group-hover:scale-110">
                     <Play
@@ -55,9 +54,6 @@ export function VideoSection() {
                       className="ml-1 fill-primary-foreground text-primary-foreground"
                     />
                   </span>
-                </span>
-                <span className="absolute bottom-5 left-0 right-0 text-center text-sm font-medium text-white/90">
-                  Watch Kyle&apos;s story
                 </span>
               </button>
             )}

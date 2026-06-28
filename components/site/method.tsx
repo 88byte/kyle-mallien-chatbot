@@ -11,7 +11,6 @@ export function Method() {
           "linear-gradient(to bottom, rgba(8,8,8,0.97), rgba(10,9,8,0.9) 50%, rgba(8,8,8,0.98)), url(/img/fuel-bg.webp)",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed",
       }}
     >
       <div className="container-tight">
@@ -24,8 +23,7 @@ export function Method() {
           </h2>
           <p className="mt-5 text-foreground/65">
             The roadmap Kyle&apos;s students use to enter cash-flowing
-            businesses — find it, pay for it, grow it, and turn it into a
-            legacy.
+            businesses. Find it, pay for it, grow it, and turn it into a legacy.
           </p>
         </Reveal>
 

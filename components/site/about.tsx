@@ -3,9 +3,9 @@ import { BRAND } from "@/lib/site";
 import { Reveal } from "./reveal";
 
 const POINTS = [
-  "Over a decade assessing 25,000+ deals — 50 a week, 2,500 a year",
+  "Mentored 250+ students into business ownership",
   "Guided students to $100M+ in real acquisitions",
-  "Transparent mentorship — shares the wins and the vulnerabilities",
+  "Transparent mentorship that shares the wins and the vulnerabilities",
   "Recognized by INC 5000 and Top 40 Under 40",
 ];
 
@@ -46,16 +46,16 @@ export function About() {
             <p>
               Kyle Mallien is an author, investor, business strategist, and
               mentor who turned business acquisition into a force multiplier for
-              wealth — then opened the playbook to everyone else. For over a
-              decade he&apos;s assessed 25,000+ deals, and his method has guided
-              students to more than $100M in acquisitions.
+              wealth, then opened the playbook to everyone else. He has mentored
+              over 250 students into ownership, and his method has guided them to
+              more than $100M in acquisitions.
             </p>
             <p>
-              His philosophy is simple, and transparent: they don&apos;t want
-              you to know acquisition is even an option. Don&apos;t gamble years
+              His philosophy is simple and transparent. They don&apos;t want you
+              to know acquisition is even an option. Don&apos;t gamble years
               starting something new when you can buy a business that already
-              works, already pays, and is ready to scale — then build a legacy
-              for your family, not your current boss.
+              works, already pays, and is ready to scale. Then build a legacy for
+              your family, not your current boss.
             </p>
           </div>
 

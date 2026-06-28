@@ -5,18 +5,10 @@ import { Button } from "@/components/ui/button";
 import { BRAND } from "@/lib/site";
 import { Reveal } from "./reveal";
 
-const AVATARS = [
-  "https://randomuser.me/api/portraits/men/32.jpg",
-  "https://randomuser.me/api/portraits/women/65.jpg",
-  "https://randomuser.me/api/portraits/men/12.jpg",
-  "https://randomuser.me/api/portraits/women/28.jpg",
-  "https://randomuser.me/api/portraits/men/76.jpg",
-];
-
 const COMMUNITY_STATS = [
-  { icon: Users, value: "500+", label: "Active members" },
-  { icon: MessagesSquare, value: "Daily", label: "Deal-of-the-Day & coaching" },
-  { icon: CalendarDays, value: "4x / year", label: "Live events + awards" },
+  { icon: Users, value: "250+", label: "Members mentored" },
+  { icon: MessagesSquare, value: "Daily", label: "Coaching & community" },
+  { icon: CalendarDays, value: "Live", label: "Events through the year" },
 ];
 
 export function Community() {
@@ -43,24 +35,23 @@ export function Community() {
                 <p className="mt-5 text-foreground/70">
                   Building wealth through acquisition is a team sport. Inside
                   Kyle&apos;s private community you&apos;re surrounded by owners
-                  closing real deals — many of whom started exactly where you
+                  closing real deals. Many of them started exactly where you
                   are, and now mentor the next wave. Ask questions, share wins,
                   and get unstuck daily.
                 </p>
 
                 <div className="mt-8 flex items-center gap-4">
                   <div className="flex -space-x-3">
-                    {AVATARS.map((src, i) => (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
+                    {["JR", "EM", "TD", "AS", "KP"].map((m, i) => (
+                      <span
                         key={i}
-                        src={src}
-                        alt="Inner Circle member"
-                        className="h-11 w-11 rounded-full border-2 border-background object-cover"
-                      />
+                        className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-background bg-secondary text-xs font-semibold text-gold-200"
+                      >
+                        {m}
+                      </span>
                     ))}
                     <span className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-background bg-gold-gradient text-xs font-semibold text-primary-foreground">
-                      500+
+                      250+
                     </span>
                   </div>
                   <p className="text-sm text-foreground/55">

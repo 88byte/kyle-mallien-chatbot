@@ -24,7 +24,7 @@ export const testimonials = [
     role: "Acquisition Entrepreneur",
   },
   {
-    text: "I must admit, I'd never been part of a coaching group where we were encouraged to share our vulnerabilities — but I'm glad Kyle shared his with us, because it makes success feel attainable.",
+    text: "I must admit, I'd never been part of a coaching group where we were encouraged to share our vulnerabilities, but I'm glad Kyle shared his with us, because it makes success feel attainable.",
     image: "",
     name: "Lynn Richards Martin",
     role: "Inner Circle Member",
@@ -42,7 +42,7 @@ export const testimonials = [
     role: "Business Owner",
   },
   {
-    text: "I didn't know what I didn't know. I learned so much in the process — and now I get to do what I actually want.",
+    text: "I didn't know what I didn't know. I learned so much in the process, and now I get to do what I actually want.",
     image: "",
     name: "Tyce Duncan",
     role: "Acquisition Entrepreneur",
@@ -54,7 +54,7 @@ export const testimonials = [
     role: "Elite Wealth Club",
   },
   {
-    text: "Kyle leads with transparency. He gives you the real roadmap — find the deal, underwrite it, elevate it — instead of keeping you just comfortable enough to never leave.",
+    text: "Kyle leads with transparency. He gives you the real roadmap. Find the deal, underwrite it, elevate it, instead of keeping you just comfortable enough to never leave.",
     image: "",
     name: "Inner Circle Member",
     role: "Elite Wealth Club",

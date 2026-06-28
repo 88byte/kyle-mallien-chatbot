@@ -27,10 +27,10 @@ export function Accolades() {
           <div className="hidden h-12 w-px bg-white/10 sm:block" />
           <div className="text-center sm:text-left">
             <div className="font-display text-2xl tracking-wide text-gradient-gold">
-              $100M+ AUM
+              $100M+
             </div>
             <div className="text-xs uppercase tracking-[0.16em] text-foreground/45">
-              50 deals reviewed weekly · 2,500 a year
+              In student acquisitions
             </div>
           </div>
         </div>

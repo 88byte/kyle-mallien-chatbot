@@ -28,10 +28,10 @@ function localAnswer(input: string): string | null {
   const isProgram = PROGRAM_KEYWORDS.some((k) => lower.includes(k));
   const isPricing = PRICING_KEYWORDS.some((k) => lower.includes(k));
   if (isPricing && isProgram) {
-    return "Pricing depends on the path that fits you best. The quickest way to get exact numbers is to apply or book a quick call — the team will walk you through The Masterclass and Elite Wealth Club options.";
+    return "Pricing depends on the path that fits you best. The quickest way to get exact numbers is to apply or book a quick call, and the team will walk you through The Masterclass and Elite Wealth Club options.";
   }
   if (isProgram) {
-    return "Kyle offers two paths:\n\n• The Masterclass — a self-paced, do-it-yourself training built on his $8,000 acquisition framework.\n\n• Elite Wealth Club — a 90-day do-it-with-me intensive with hands-on mentorship, a deal team, legal counsel, and capital-raising support.\n\nWant me to help you figure out which fits your goals?";
+    return "Kyle offers two paths:\n\n• The Masterclass: a self-paced, do-it-yourself training covering the full F.U.E.L Process.\n\n• Elite Wealth Club: a do-it-with-me intensive with hands-on mentorship and a deal team.\n\nWant me to help you figure out which fits your goals?";
   }
   return null;
 }
@@ -60,7 +60,7 @@ export function ChatWidget() {
     setMessages([
       {
         role: "assistant",
-        content: `Hi ${name.split(" ")[0]} — welcome! I'm Kyle's AI assistant. Ask me anything about buying businesses, the programs, or how members are closing deals.`,
+        content: `Hi ${name.split(" ")[0]}, welcome! I'm Kyle's AI assistant. Ask me anything about buying businesses, the programs, or how members are closing deals.`,
       },
     ]);
   };

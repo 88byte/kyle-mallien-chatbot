@@ -32,12 +32,12 @@ export function Hero() {
                 <Star key={i} size={12} className="fill-gold-300 text-gold-300" />
               ))}
             </span>
-            75+ students · $90M+ secured in 2 years
+            250+ students mentored · $100M+ in deals
           </div>
 
           <h1 className="font-display mt-6 text-[2rem] leading-[1.08] text-white sm:text-5xl xl:text-6xl">
             Build wealth by{" "}
-            <span className="text-gradient-gold">buying businesses</span> — not
+            <span className="text-gradient-gold">buying businesses</span>, not
             building them from scratch.
           </h1>
 
@@ -47,9 +47,9 @@ export function Hero() {
 
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-foreground/75 lg:mx-0">
             I help Doctors, Lawyers, Sales and Accounting pros who are great at
-            their jobs — but feel trapped by them — buy cash-flowing businesses.
-            One acquisition can replace your income. The next builds generational
-            wealth for your family, not your boss.
+            their jobs but feel trapped by them. They buy cash-flowing businesses
+            instead. One acquisition can replace your income. The next builds
+            generational wealth for your family, not your boss.
           </p>
 
           <div className="mt-8 flex justify-center lg:justify-start">

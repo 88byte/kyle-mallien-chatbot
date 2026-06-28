@@ -16,7 +16,7 @@ export function Problems() {
             Everyone has either an income problem or a tax problem
           </h2>
           <p className="mt-5 text-foreground/65">
-            Figure out which one is yours — because acquisition is the answer to
+            Figure out which one is yours, because acquisition is the answer to
             both.
           </p>
         </Reveal>
