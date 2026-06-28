@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Providers } from "@/components/providers";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kylemallien.com"),
@@ -46,21 +47,23 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
         <style
           dangerouslySetInnerHTML={{
             __html: `
               :root {
-                --font-sans: 'Inter', system-ui, sans-serif;
-                --font-serif: 'Playfair Display', Georgia, serif;
+                --font-sans: 'Montserrat', system-ui, sans-serif;
+                --font-serif: 'Cormorant', Georgia, serif;
               }
             `,
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

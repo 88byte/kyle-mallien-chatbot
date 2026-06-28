@@ -46,6 +46,34 @@
   ::selection {
     background-color: hsl(var(--primary) / 0.3);
   }
+
+  /* Visible focus rings for keyboard users (UI/UX Pro Max — a11y focus-states) */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Display headings: Cormorant reads best a touch tighter */
+  h1,
+  h2 {
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Respect reduced-motion: halt looping/scroll animations (a11y reduced-motion) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @layer components {

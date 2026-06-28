@@ -1,0 +1,115 @@
+"use client";
+import { motion } from "motion/react";
+import { Users, MessagesSquare, CalendarDays, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { BRAND } from "@/lib/site";
+import { Reveal } from "./reveal";
+
+const AVATARS = [
+  "https://randomuser.me/api/portraits/men/32.jpg",
+  "https://randomuser.me/api/portraits/women/65.jpg",
+  "https://randomuser.me/api/portraits/men/12.jpg",
+  "https://randomuser.me/api/portraits/women/28.jpg",
+  "https://randomuser.me/api/portraits/men/76.jpg",
+];
+
+const COMMUNITY_STATS = [
+  { icon: Users, value: "500+", label: "Active members" },
+  { icon: MessagesSquare, value: "Daily", label: "Deal-of-the-Day & coaching" },
+  { icon: CalendarDays, value: "4x / year", label: "Live events + awards" },
+];
+
+export function Community() {
+  return (
+    <section className="relative py-24 sm:py-28">
+      <div className="container-tight">
+        <Reveal>
+          <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-gradient-to-br from-card/80 to-background p-8 sm:p-14">
+            <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-gold-500/10 blur-[120px]" />
+
+            <div className="relative grid items-center gap-12 lg:grid-cols-2">
+              <div>
+                <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/5 px-3 py-1.5 text-xs font-medium text-emerald-300">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+                  </span>
+                  The Inner Circle is active now
+                </div>
+
+                <h2 className="mt-6 font-serif text-3xl font-semibold tracking-tight sm:text-5xl">
+                  You don&apos;t do this alone
+                </h2>
+                <p className="mt-5 text-foreground/70">
+                  Building wealth through acquisition is a team sport. Inside
+                  Kyle&apos;s private community you&apos;re surrounded by owners
+                  closing real deals — many of whom started exactly where you
+                  are, and now mentor the next wave. Ask questions, share wins,
+                  and get unstuck daily.
+                </p>
+
+                <div className="mt-8 flex items-center gap-4">
+                  <div className="flex -space-x-3">
+                    {AVATARS.map((src, i) => (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        key={i}
+                        src={src}
+                        alt="Inner Circle member"
+                        className="h-11 w-11 rounded-full border-2 border-background object-cover"
+                      />
+                    ))}
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-background bg-gold-gradient text-xs font-semibold text-primary-foreground">
+                      500+
+                    </span>
+                  </div>
+                  <p className="text-sm text-foreground/55">
+                    owners building wealth together
+                  </p>
+                </div>
+
+                <div className="mt-9">
+                  <Button asChild size="lg">
+                    <a href={BRAND.applyUrl}>
+                      Join the community
+                      <ArrowRight size={18} />
+                    </a>
+                  </Button>
+                </div>
+              </div>
+
+              <div className="grid gap-4">
+                {COMMUNITY_STATS.map((stat, i) => (
+                  <motion.div
+                    key={stat.label}
+                    initial={{ opacity: 0, x: 24 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{
+                      duration: 0.6,
+                      delay: i * 0.1,
+                      ease: [0.16, 1, 0.3, 1],
+                    }}
+                    viewport={{ once: true, margin: "-60px" }}
+                    className="flex items-center gap-4 rounded-2xl border border-white/10 bg-card/60 p-5 backdrop-blur"
+                  >
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gold-500/10 text-gold-300">
+                      <stat.icon size={22} />
+                    </span>
+                    <div>
+                      <div className="font-serif text-2xl font-semibold text-gradient-gold">
+                        {stat.value}
+                      </div>
+                      <div className="text-sm text-foreground/60">
+                        {stat.label}
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}

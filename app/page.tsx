@@ -5,6 +5,7 @@ import { About } from "@/components/site/about";
 import { Method } from "@/components/site/method";
 import { Programs } from "@/components/site/programs";
 import { Results } from "@/components/site/results";
+import { Community } from "@/components/site/community";
 import { Testimonials } from "@/components/site/testimonials";
 import { CTA } from "@/components/site/cta";
 import { Footer } from "@/components/site/footer";
@@ -20,6 +21,7 @@ export default function Home() {
       <Method />
       <Programs />
       <Results />
+      <Community />
       <Testimonials />
       <CTA />
       <Footer />

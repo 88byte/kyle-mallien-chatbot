@@ -55,8 +55,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        serif: ["var(--font-serif)", "Playfair Display", "Georgia", "serif"],
-        sans: ["var(--font-sans)", "Inter", "system-ui", "sans-serif"],
+        serif: ["var(--font-serif)", "Cormorant", "Georgia", "serif"],
+        sans: ["var(--font-sans)", "Montserrat", "system-ui", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
