@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/site/navbar";
 import { Hero } from "@/components/site/hero";
 import { Accolades } from "@/components/site/accolades";
+import { VideoSection } from "@/components/site/video";
 import { About } from "@/components/site/about";
 import { Problems } from "@/components/site/problems";
 import { Method } from "@/components/site/method";
@@ -19,6 +20,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Accolades />
+      <VideoSection />
       <About />
       <Problems />
       <Method />

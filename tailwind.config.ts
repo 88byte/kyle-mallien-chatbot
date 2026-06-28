@@ -61,10 +61,10 @@ const config: Config = {
         },
       },
       fontFamily: {
-        // Ailerons = brand display face; Gill Sans = brand body face
-        serif: ["var(--font-serif)", "Ailerons", "sans-serif"],
+        // Gill Sans = brand body/headings (legible). Ailerons = display accent only.
         sans: ["var(--font-sans)", "Gill Sans", "Helvetica Neue", "sans-serif"],
-        display: ["Asterone", "var(--font-serif)", "sans-serif"],
+        serif: ["var(--font-sans)", "Gill Sans", "Helvetica Neue", "sans-serif"],
+        display: ["Ailerons", "var(--font-sans)", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

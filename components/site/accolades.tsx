@@ -8,19 +8,25 @@ export function Accolades() {
         <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
           {/* eslint-disable @next/next/no-img-element */}
           <img
-            src="/img/inc5000.png"
+            src="/img/inc5000.webp"
             alt="INC 5000 — #1465 Fastest-Growing Company in the U.S."
+            width={120}
+            height={56}
+            loading="lazy"
             className="h-14 w-auto opacity-80 transition-opacity hover:opacity-100"
           />
           <img
-            src="/img/top40.png"
+            src="/img/top40.webp"
             alt="San Diego Business Journal — Top 40 Under 40"
+            width={64}
+            height={64}
+            loading="lazy"
             className="h-16 w-auto opacity-80 transition-opacity hover:opacity-100"
           />
           {/* eslint-enable @next/next/no-img-element */}
           <div className="hidden h-12 w-px bg-white/10 sm:block" />
           <div className="text-center sm:text-left">
-            <div className="font-serif text-2xl tracking-wide text-gradient-gold">
+            <div className="font-display text-2xl tracking-wide text-gradient-gold">
               $100M+ AUM
             </div>
             <div className="text-xs uppercase tracking-[0.16em] text-foreground/45">

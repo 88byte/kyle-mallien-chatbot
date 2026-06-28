@@ -96,7 +96,7 @@ export function Community() {
                       <stat.icon size={22} />
                     </span>
                     <div>
-                      <div className="font-serif text-2xl font-semibold text-gradient-gold">
+                      <div className="font-display text-2xl text-gradient-gold">
                         {stat.value}
                       </div>
                       <div className="text-sm text-foreground/60">

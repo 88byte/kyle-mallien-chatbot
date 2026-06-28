@@ -23,7 +23,7 @@ export function Method() {
           {PILLARS.map((pillar, i) => (
             <Reveal key={pillar.step} delay={i * 0.08}>
               <div className="group h-full rounded-3xl border border-white/10 bg-card/50 p-7 transition-colors hover:border-gold-500/40">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gold-500/10 font-serif text-3xl font-semibold text-gradient-gold">
+                <div className="font-display flex h-14 w-14 items-center justify-center rounded-2xl bg-gold-500/10 text-3xl text-gradient-gold">
                   {pillar.step}
                 </div>
                 <h3 className="mt-5 font-serif text-2xl font-medium">

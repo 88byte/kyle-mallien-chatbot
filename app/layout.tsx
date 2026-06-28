@@ -45,7 +45,6 @@ export default function RootLayout({
             __html: `
               :root {
                 --font-sans: 'Gill Sans Web', 'Gill Sans', 'Gill Sans MT', 'Helvetica Neue', system-ui, sans-serif;
-                --font-serif: 'Ailerons', 'Gill Sans Web', system-ui, sans-serif;
               }
             `,
           }}
