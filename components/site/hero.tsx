@@ -35,7 +35,7 @@ export function Hero() {
             250+ students mentored · $100M+ in deals
           </div>
 
-          <h1 className="font-display mt-6 text-[2rem] leading-[1.08] text-white sm:text-5xl xl:text-6xl">
+          <h1 className="font-display mt-6 text-[2.1rem] leading-[1.04] text-white sm:text-6xl xl:text-7xl">
             Build wealth by{" "}
             <span className="text-gradient-gold">buying businesses</span>, not
             building them from scratch.
