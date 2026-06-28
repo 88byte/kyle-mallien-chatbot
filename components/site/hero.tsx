@@ -16,7 +16,13 @@ export function Hero() {
         backgroundPosition: "center",
       }}
     >
-      <div className="pointer-events-none absolute right-0 top-10 h-[520px] w-[620px] rounded-full bg-gold-500/15 blur-[150px]" />
+      <div
+        className="pointer-events-none absolute right-0 top-10 h-[520px] w-[620px]"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(194,161,77,0.16), transparent 65%)",
+        }}
+      />
 
       <div className="container-tight relative grid items-center gap-8 pb-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:pb-16">
         {/* Copy */}
@@ -83,7 +89,7 @@ export function Hero() {
       </div>
 
       {/* Stat band */}
-      <div className="border-t border-white/5 bg-black/40 backdrop-blur">
+      <div className="border-t border-white/5 bg-black/60">
         <div className="container-tight grid grid-cols-2 divide-x divide-y divide-white/5 md:grid-cols-4 md:divide-y-0">
           {HERO_STATS.map((stat, i) => (
             <motion.div

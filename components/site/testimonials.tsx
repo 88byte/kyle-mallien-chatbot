@@ -19,7 +19,13 @@ export function Testimonials() {
         backgroundPosition: "center",
       }}
     >
-      <div className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-gold-500/[0.07] blur-[150px]" />
+      <div
+        className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[800px] -translate-x-1/2"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(194,161,77,0.08), transparent 65%)",
+        }}
+      />
       <div className="container-tight relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

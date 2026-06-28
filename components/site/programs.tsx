@@ -8,7 +8,13 @@ import { SectionEyebrow } from "./section-eyebrow";
 export function Programs() {
   return (
     <section id="programs" className="relative py-16 sm:py-28">
-      <div className="pointer-events-none absolute left-1/2 top-1/3 h-[400px] w-[700px] -translate-x-1/2 rounded-full bg-gold-600/5 blur-[150px]" />
+      <div
+        className="pointer-events-none absolute left-1/2 top-1/3 h-[400px] w-[700px] -translate-x-1/2"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(160,123,46,0.08), transparent 65%)",
+        }}
+      />
       <div className="container-tight relative">
         <Reveal className="mx-auto max-w-2xl text-center">
           <SectionEyebrow center>Ways to work together</SectionEyebrow>

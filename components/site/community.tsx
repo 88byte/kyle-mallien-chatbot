@@ -17,7 +17,13 @@ export function Community() {
       <div className="container-tight">
         <Reveal>
           <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-gradient-to-br from-card/80 to-background p-8 sm:p-14">
-            <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-gold-500/10 blur-[120px]" />
+            <div
+              className="pointer-events-none absolute -right-20 -top-20 h-72 w-72"
+              style={{
+                background:
+                  "radial-gradient(circle, rgba(194,161,77,0.12), transparent 70%)",
+              }}
+            />
 
             <div className="relative grid items-center gap-12 lg:grid-cols-2">
               <div>

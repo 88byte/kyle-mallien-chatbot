@@ -15,7 +15,13 @@ export function FreeGift() {
           viewport={{ once: true, margin: "-60px" }}
           className="relative overflow-hidden rounded-3xl border border-gold-500/25 bg-gradient-to-r from-gold-500/[0.1] via-card to-slate/10 p-8 sm:p-12"
         >
-          <div className="pointer-events-none absolute -left-10 top-1/2 h-48 w-48 -translate-y-1/2 rounded-full bg-gold-500/10 blur-[90px]" />
+          <div
+            className="pointer-events-none absolute -left-10 top-1/2 h-48 w-48 -translate-y-1/2"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(194,161,77,0.12), transparent 70%)",
+            }}
+          />
           <div className="relative flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-gold-200">
