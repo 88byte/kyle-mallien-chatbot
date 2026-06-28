@@ -30,7 +30,7 @@ export function Hero() {
                 />
               ))}
             </span>
-            Trusted by 500+ business owners
+            75+ students · $100M+ in deals closed
           </div>
 
           <h1 className="font-serif text-4xl font-semibold leading-[1.08] tracking-tight sm:text-6xl md:text-7xl">
@@ -39,11 +39,16 @@ export function Hero() {
             not building them from scratch.
           </h1>
 
+          <p className="mt-5 text-sm font-medium uppercase tracking-[0.22em] text-gold-300/80">
+            Author + Investor + Business Strategist + Mentor
+          </p>
+
           <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-foreground/70">
-            Acquisition is the force multiplier the wealthy actually use. Kyle
-            Mallien mentors ordinary operators into owners of cash-flowing
-            companies — the art of finding, financing, and scaling businesses
-            you don&apos;t have to start.
+            I work with Doctors, Lawyers, Sales, and Accounting pros who are
+            great at their jobs — but feel trapped by them. One acquisition can
+            replace your income. The next builds generational wealth for your
+            family, not your current boss. The biggest revelation? Why
+            don&apos;t they teach us this?
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

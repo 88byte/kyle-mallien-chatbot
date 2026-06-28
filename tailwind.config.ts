@@ -40,18 +40,24 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Brand palette — black + champagne gold
+        // Brand palette — sampled from kylemallien.com
+        // bronze #887052 · champagne #DDCFB4 · cream #ECEBE9
         gold: {
-          50: "#FBF6E9",
-          100: "#F5EAC9",
-          200: "#EAD79B",
-          300: "#DEC272",
-          400: "#D4AF52",
-          500: "#C2A14D",
-          600: "#A07B2E",
-          700: "#7C5E22",
-          800: "#574019",
-          900: "#33240E",
+          50: "#F6F3ED",
+          100: "#ECEBE9",
+          200: "#DDCFB4",
+          300: "#CBB892",
+          400: "#B49C71",
+          500: "#887052",
+          600: "#6E5940",
+          700: "#534332",
+          800: "#3A2F23",
+          900: "#221C15",
+        },
+        // Secondary accent — slate blue #2A4759
+        slate: {
+          DEFAULT: "#2A4759",
+          deep: "#1E333F",
         },
       },
       fontFamily: {
@@ -65,9 +71,9 @@ const config: Config = {
       },
       backgroundImage: {
         "gold-gradient":
-          "linear-gradient(135deg, #EAD79B 0%, #D4AF52 35%, #A07B2E 100%)",
+          "linear-gradient(135deg, #DDCFB4 0%, #B49C71 40%, #887052 100%)",
         "gold-text":
-          "linear-gradient(180deg, #F5EAC9 0%, #D4AF52 55%, #A07B2E 100%)",
+          "linear-gradient(180deg, #ECEBE9 0%, #DDCFB4 45%, #B49C71 100%)",
       },
       keyframes: {
         "fade-up": {

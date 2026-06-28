@@ -30,8 +30,9 @@ export function Testimonials() {
             Lives changed, one acquisition at a time
           </h2>
           <p className="mt-5 text-foreground/65">
-            From military disability checks to multi-million dollar portfolios —
-            here&apos;s what happens inside the community.
+            Students have done over $100 million in deals under Kyle&apos;s
+            mentorship. Here&apos;s what they say about buying and scaling real
+            businesses.
           </p>
         </motion.div>
 

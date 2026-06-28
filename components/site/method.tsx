@@ -3,18 +3,19 @@ import { Reveal } from "./reveal";
 
 export function Method() {
   return (
-    <section className="relative py-24 sm:py-28">
+    <section id="fuel" className="relative py-24 sm:py-28">
       <div className="container-tight">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">
-            The Method
+            The Process
           </p>
           <h2 className="font-serif text-3xl font-semibold tracking-tight sm:text-5xl">
-            Four steps from first deal to lasting legacy
+            The F.U.E.L Process
           </h2>
           <p className="mt-5 text-foreground/65">
-            The same framework Kyle&apos;s members use to find, finance, and
-            scale acquisitions — sequenced so nothing gets skipped.
+            The roadmap Kyle&apos;s students use to enter cash-flowing
+            businesses — find it, pay for it, grow it, and turn it into a
+            legacy.
           </p>
         </Reveal>
 
@@ -22,12 +23,15 @@ export function Method() {
           {PILLARS.map((pillar, i) => (
             <Reveal key={pillar.step} delay={i * 0.08}>
               <div className="group h-full rounded-3xl border border-white/10 bg-card/50 p-7 transition-colors hover:border-gold-500/40">
-                <div className="font-serif text-4xl font-semibold text-gold-600/60 transition-colors group-hover:text-gradient-gold">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gold-500/10 font-serif text-3xl font-semibold text-gradient-gold">
                   {pillar.step}
                 </div>
-                <h3 className="mt-4 font-serif text-2xl font-medium">
+                <h3 className="mt-5 font-serif text-2xl font-medium">
                   {pillar.title}
                 </h3>
+                <p className="text-xs font-medium uppercase tracking-[0.14em] text-gold-300/70">
+                  {pillar.subtitle}
+                </p>
                 <p className="mt-3 text-sm leading-relaxed text-foreground/65">
                   {pillar.body}
                 </p>

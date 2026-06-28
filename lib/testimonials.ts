@@ -1,61 +1,62 @@
 /**
- * Member stories drawn from kylemallien.com success stories and community.
- * Quotes are paraphrased from publicly shared outcomes; avatars are
- * placeholder portraits (randomuser.me) pending real member photos.
+ * Real testimonials from kylemallien.com/success-stories.
+ * Names are the actual clients featured on the site. We intentionally use
+ * monogram initials (not stock photos) so we never put a stranger's face on
+ * a real person — swap in real headshots when available.
  */
 export const testimonials = [
   {
-    text: "I went from living on a military disability check to a millionaire making multiple six figures. Kyle didn't just teach me — he bought my business and showed me the other side of the table.",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
-    name: "Marcus T.",
-    role: "From disability check to 7 figures",
+    text: "What's great about Kyle is he was one of the first entrepreneurs who showed me a true path to the top, and it's been an honor to sell him such a powerful brand that I know he will take even further.",
+    image: "",
+    name: "Gallant Dill",
+    role: "Entrepreneur",
   },
   {
-    text: "We closed our first acquisition in September and moved to South Florida while we set up the next, bigger deal. None of this felt possible a year ago.",
-    image: "https://randomuser.me/api/portraits/men/45.jpg",
-    name: "Kodi R.",
-    role: "First acquisition closed",
+    text: "Kyle is the only person who has my stamp of approval in the acquisition space!",
+    image: "",
+    name: "Tommy Mello",
+    role: "Founder & Investor",
   },
   {
-    text: "I'm on track to make 20x my investment on my first deal — in year one. The rest of it is genuinely setting my family up for life.",
-    image: "https://randomuser.me/api/portraits/men/12.jpg",
-    name: "Eric M.",
-    role: "Elite Wealth Club member",
+    text: "Kyle showed me early on how to take a business from $100,000 a month to $1,000,000!",
+    image: "",
+    name: "Alex Sharf",
+    role: "Acquisition Entrepreneur",
   },
   {
-    text: "I became the owner of a million-dollar med spa that throws off $500K in profit a year. The frameworks made underwriting it feel almost simple.",
-    image: "https://randomuser.me/api/portraits/women/65.jpg",
-    name: "Ella V.",
-    role: "Med spa owner",
+    text: "I must admit, I'd never been part of a coaching group where we were encouraged to share our vulnerabilities — but I'm glad Kyle shared his with us, because it makes success feel attainable.",
+    image: "",
+    name: "Lynn Richards Martin",
+    role: "Inner Circle Member",
   },
   {
-    text: "My brother and I bought the childhood ice-cream landmark we grew up with — a multi-million dollar business. We're operators now, not employees.",
-    image: "https://randomuser.me/api/portraits/men/52.jpg",
-    name: "Daniel & Jake P.",
-    role: "Multi-business owners",
+    text: "Kyle's mentorship is invaluable to his students because he leads by example. His methods are tried and tested, so you know they work!",
+    image: "",
+    name: "Melanie Townsend",
+    role: "Inner Circle Member",
   },
   {
-    text: "The company I bought needs one to four hours of my week, and I'm up 480% cash-on-cash this year. That's the kind of math nobody teaches you in a job.",
-    image: "https://randomuser.me/api/portraits/men/76.jpg",
-    name: "Andre L.",
-    role: "Phoenix event attendee",
+    text: "I wish I would have reached out to Kyle earlier. My own businesses run better from everything I learned in this process.",
+    image: "",
+    name: "Tyler Joas",
+    role: "Business Owner",
   },
   {
-    text: "Twelve months ago I was $40K in credit-card debt. Today I run two companies doing $800K a month in gross revenue. The community held me to a higher standard.",
-    image: "https://randomuser.me/api/portraits/men/22.jpg",
-    name: "Ryan K.",
-    role: "Two-company operator",
+    text: "I didn't know what I didn't know. I learned so much in the process — and now I get to do what I actually want.",
+    image: "",
+    name: "Tyce Duncan",
+    role: "Acquisition Entrepreneur",
   },
   {
-    text: "What sold me was the vulnerability. Kyle shares his own setbacks, so success stops feeling reserved for some other kind of person and starts feeling like a system you can follow.",
-    image: "https://randomuser.me/api/portraits/women/28.jpg",
-    name: "Priya S.",
-    role: "Inner Circle member",
+    text: "The biggest revelation after being introduced to acquisitions was simple: why don't they teach us this? One deal really can replace your income.",
+    image: "",
+    name: "Inner Circle Member",
+    role: "Elite Wealth Club",
   },
   {
-    text: "Having in-house legal, a fractional CFO, and an investor network on call meant I never stalled out. Every time I hit a wall, the room had already solved it.",
-    image: "https://randomuser.me/api/portraits/men/8.jpg",
-    name: "Tom B.",
-    role: "Acquisition entrepreneur",
+    text: "Kyle leads with transparency. He gives you the real roadmap — find the deal, underwrite it, elevate it — instead of keeping you just comfortable enough to never leave.",
+    image: "",
+    name: "Inner Circle Member",
+    role: "Elite Wealth Club",
   },
 ];

@@ -3,10 +3,10 @@ import { BRAND } from "@/lib/site";
 import { Reveal } from "./reveal";
 
 const POINTS = [
-  "Manages 20+ active companies with $100M+ under management",
-  "Mentored 500+ entrepreneurs to $170M+ in acquisitions",
-  "Builds his team from within — students return as mentors",
-  "Shares the real playbook, including the losses, not just the wins",
+  "Over a decade assessing 25,000+ deals — 50 a week, 2,500 a year",
+  "Guided students to $100M+ in real acquisitions",
+  "Transparent mentorship — shares the wins and the vulnerabilities",
+  "Recognized by INC 5000 and Top 40 Under 40",
 ];
 
 export function About() {
@@ -44,17 +44,18 @@ export function About() {
           </h2>
           <div className="mt-6 space-y-4 text-foreground/70">
             <p>
-              Kyle Mallien is an investor, author, and fund manager who turned
-              business acquisition into a force multiplier for wealth — and then
-              opened the playbook to everyone else. Recognized by INC 5000 and
-              named to the San Diego Business Journal&apos;s Top 40 Under 40, he
-              now mentors a community of owners doing real deals.
+              Kyle Mallien is an author, investor, business strategist, and
+              mentor who turned business acquisition into a force multiplier for
+              wealth — then opened the playbook to everyone else. For over a
+              decade he&apos;s assessed 25,000+ deals, and his method has guided
+              students to more than $100M in acquisitions.
             </p>
             <p>
-              His philosophy is simple: don&apos;t gamble years starting
-              something new when you can buy a business that already works,
-              already pays, and is ready to scale. Then stack acquisitions into
-              a portfolio that builds generational wealth.
+              His philosophy is simple, and transparent: they don&apos;t want
+              you to know acquisition is even an option. Don&apos;t gamble years
+              starting something new when you can buy a business that already
+              works, already pays, and is ready to scale — then build a legacy
+              for your family, not your current boss.
             </p>
           </div>
 

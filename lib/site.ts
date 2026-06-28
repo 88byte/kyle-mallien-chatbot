@@ -1,62 +1,81 @@
 /**
  * Central content + brand data for the Kyle Mallien site.
- * Copy and figures are sourced from kylemallien.com and public profiles.
+ * Copy, figures, structure and palette are sourced directly from the
+ * live kylemallien.com (Home / About / Work With Me / Success Stories).
  */
 
 export const BRAND = {
   name: "Kyle Mallien",
-  tagline: "Acquisitionpreneur",
-  // Logo + portrait hosted on the existing brand CDN.
+  tagline: "Author + Investor + Business Strategist + Mentor",
   logo:
     "https://kylemallien.com/wp-content/uploads/2023/12/Stacked-Primary-Logo-without-Subline-Full-Gradient-on-Black.png",
   portrait:
     "https://kylemallien.com/wp-content/uploads/2024/01/business-strategist-kyle-mobile.png",
-  // Primary action — point existing traffic to the application / call funnel.
   applyUrl: "https://kylemallien.com/work-with-me/",
   callUrl: "https://kylemallien.com/work-with-me/",
+  successUrl: "https://kylemallien.com/success-stories/",
+  giftUrl: "https://kylemallien.com/work-with-me/",
 };
 
 export const NAV_LINKS = [
   { label: "About", href: "#about" },
-  { label: "Programs", href: "#programs" },
-  { label: "Results", href: "#results" },
-  { label: "Stories", href: "#testimonials" },
+  { label: "The F.U.E.L Process", href: "#fuel" },
+  { label: "Work With Me", href: "#programs" },
+  { label: "Success Stories", href: "#testimonials" },
 ];
 
+// Figures stated on kylemallien.com
 export const HERO_STATS = [
-  { value: "$170M+", label: "In student-led acquisitions" },
-  { value: "500+", label: "Owners mentored" },
-  { value: "20+", label: "Companies under management" },
-  { value: "$30M+", label: "Profit created for members" },
+  { value: "25,000+", label: "Deals assessed over a decade" },
+  { value: "$100M+", label: "Closed in student deals" },
+  { value: "75+", label: "Students mentored" },
+  { value: "6-figures", label: "Net income from a single deal" },
 ];
 
 export const ACCOLADES = [
   "INC 5000 — #1465 Fastest-Growing Company in the U.S.",
-  "San Diego Business Journal — Top 40 Under 40 Business Leaders",
+  "San Diego Business Journal — Top 40 Under 40",
   "$100M+ Assets Under Management",
-  "Investor · Author · Fund Manager · Buy-Side M&A",
+  "50 deals reviewed weekly · 2,500 every year",
 ];
 
+// "Everyone has either an Income problem or a Tax problem"
+export const PROBLEMS = [
+  {
+    title: "The Income Problem",
+    body: "You're really good at your job — Doctor, Lawyer, Sales, HR, Accounting — but you either hate the structure or feel trapped by it. One acquisition can replace your income, and the next can build wealth your boss will never hand you.",
+  },
+  {
+    title: "The Tax Problem",
+    body: "You already make gobs of money, but your wealth manager has you in a 60/40 program you don't fully understand, netting ~4% after fees. Buying the right tax-advantaged deals lets you use the IRS code to your advantage — and keep far more of what you earn.",
+  },
+];
+
+// The F.U.E.L Process (verbatim structure from the site)
 export const PILLARS = [
   {
-    step: "01",
+    step: "F",
     title: "Find",
-    body: "Source off-market, cash-flowing businesses worth owning — with proven deal-flow systems, broker directories, and 2,000 monthly direct-mail campaigns done for you.",
+    subtitle: "Identification",
+    body: "Find the deal based on your core skill set — the businesses where your existing expertise is the unfair advantage.",
   },
   {
-    step: "02",
+    step: "U",
     title: "Underwrite",
-    body: "Know exactly what a business is worth and how to structure the deal. In-house legal counsel, a fractional CFO, and $50K of battle-tested templates remove the guesswork.",
+    subtitle: "Financial Modeling",
+    body: "Learn exactly how to pay for the deal — the financial modeling and structures that get acquisitions funded.",
   },
   {
-    step: "03",
+    step: "E",
     title: "Elevate",
-    body: "Raise the capital, close with SBA and private investors, then install the operators and systems that scale cash flow without scaling your hours.",
+    subtitle: "Growth & Professionalization",
+    body: "Know how to manage and grow the business once it's yours — professionalize operations and scale the cash flow.",
   },
   {
-    step: "04",
+    step: "L",
     title: "Legacy",
-    body: "Stack acquisitions into a portfolio that compounds — building generational wealth for you and your family, not just another job you own.",
+    subtitle: "Generational Wealth",
+    body: "Stack it into a legacy — building generational wealth for you and your family, not your current boss.",
   },
 ];
 
@@ -67,14 +86,14 @@ export const PROGRAMS = [
     price: "Self-paced",
     tagline: "The complete acquisition playbook, on your schedule.",
     description:
-      "A self-paced training built from the exact $8,000 framework Kyle's members use to find, value, and close their first deal — learn the art of buying businesses from the ground up.",
+      "A self-paced, DIY training that walks you through the entire F.U.E.L Process — find, underwrite, elevate, and build a legacy — with the comprehensive materials to close your first deal independently.",
     features: [
-      "The full Find · Underwrite · Elevate · Legacy curriculum",
-      "Deal sourcing, valuation & negotiation frameworks",
-      "Underwriting calculators and offer templates",
-      "Lifetime access — learn at your own pace",
+      "The full F.U.E.L Process curriculum",
+      "Deal sourcing, underwriting & valuation frameworks",
+      "Financing structures and offer templates",
+      "Learn at your own pace, on demand",
     ],
-    cta: "Start the Masterclass",
+    cta: "Get Access Now",
     featured: false,
   },
   {
@@ -83,40 +102,47 @@ export const PROGRAMS = [
     price: "By application",
     tagline: "Hands-on mentorship until the deal is closed.",
     description:
-      "A 90-day intensive where Kyle, Dana Cornell, and a full deal team work alongside you — sourcing, underwriting, and closing real acquisitions with you, not just teaching you how.",
+      "A do-it-with-me intensive where Kyle and his team work alongside you — sourcing, underwriting, and closing real acquisitions with you, with the support, network, and accountability to get you across the finish line.",
     features: [
-      "Access to Kyle's private Inner Circle community",
-      "12 calls with Kyle + daily expert coaching sessions",
-      "$50K in legal, capital-raising & operating templates",
-      "In-house legal counsel + fractional CFO on call",
-      "SBA broker, investor network & Deal-of-the-Day flow",
-      "4 live events a year, including the awards ceremony",
+      "Direct mentorship from Kyle and his team",
+      "Private Inner Circle community access",
+      "Legal counsel, capital-raising & operating support",
+      "Investor network + Deal-of-the-Day flow",
+      "Live events throughout the year",
     ],
-    cta: "Apply to Join",
+    cta: "Explore Ways to Work With Me",
     featured: true,
   },
 ];
 
+// Drawn from kylemallien.com/success-stories testimonials
 export const SUCCESS_HIGHLIGHTS = [
   {
-    metric: "480%",
-    label: "Cash-on-cash return",
-    body: "A Phoenix attendee bought a business needing just 1–4 hours of work a week — and is up 480% cash-on-cash this year.",
+    metric: "$1M/mo",
+    label: "Scaled from $100K a month",
+    body: "“Kyle showed me early on how to take a business from $100,000 a month to $1,000,000!”",
   },
   {
-    metric: "$800K/mo",
-    label: "Gross revenue in 12 months",
-    body: "A member who started $40K in credit-card debt now runs two companies doing $800K/month in gross revenue.",
+    metric: "$90M+",
+    label: "Secured in 2 years",
+    body: "Kyle's method guided his students to secure more than $90M in deals over the last two years alone.",
   },
   {
-    metric: "20x",
-    label: "Projected return on first deal",
-    body: "Eric is on track to make 20x his investment on his very first acquisition — in year one — with the rest setting him up for life.",
+    metric: "$100M+",
+    label: "In total student deals",
+    body: "Students have done over $100 million in deals under Kyle's mentorship — real businesses, bought and scaled.",
   },
 ];
 
+export const FREE_GIFT = {
+  eyebrow: "Free Gift",
+  heading: "Learn what the wealthy are doing to pay less tax and buy more cash flow",
+  body: "In these uncertain times, the people building real wealth aren't guessing — they're acquiring. Get the free breakdown of how tax-advantaged acquisitions actually work.",
+  cta: "Get the Free Gift",
+};
+
 export const FINAL_CTA = {
-  eyebrow: "Your first acquisition starts here",
-  heading: "Stop building from scratch. Start buying what already works.",
-  body: "Every week you wait is cash flow you don't own. Join the community turning ordinary operators into business owners — and build wealth the way the wealthy actually do it.",
+  eyebrow: "Your first deal could replace your income",
+  heading: "Are you ready to be my next success story?",
+  body: "Let me put you on my back and get you across the finish line. First, replace your income. Second, build generational wealth for you and your family — not your current boss.",
 };
