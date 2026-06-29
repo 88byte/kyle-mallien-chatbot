@@ -64,6 +64,13 @@
     scroll-margin-top: 5.5rem;
   }
 
+  html,
+  body {
+    /* Prevent the page from panning sideways on mobile */
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-feature-settings: "ss01", "cv01";
@@ -156,6 +163,8 @@
     will-change: transform, opacity;
     box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.7);
     user-select: none;
+    /* Vertical scroll stays with the page; horizontal is the swiper's */
+    touch-action: pan-y;
   }
   .testimonial-card.is-dragging {
     transition: none;

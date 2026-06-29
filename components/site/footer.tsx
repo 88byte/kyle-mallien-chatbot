@@ -9,8 +9,8 @@ export function Footer() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={BRAND.logo} alt="Kyle Mallien" className="h-12 w-auto" />
             <p className="mt-5 text-sm leading-relaxed text-foreground/55">
-              Luxury business-acquisition coaching and mentorship. A community
-              for people learning to build real wealth by buying and scaling
+              Business acquisition coaching and mentorship. A community for
+              people learning to build real wealth by buying and scaling
               cash-flowing businesses.
             </p>
           </div>
