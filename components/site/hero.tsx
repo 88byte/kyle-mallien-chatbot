@@ -24,7 +24,7 @@ export function Hero() {
         }}
       />
 
-      <div className="container-tight relative grid items-center gap-8 pb-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:pb-16">
+      <div className="container-tight relative grid items-end gap-6 pb-0 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12 lg:pb-16">
         {/* Copy */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -83,7 +83,7 @@ export function Hero() {
             width={460}
             height={560}
             fetchPriority="high"
-            className="relative z-10 w-full drop-shadow-2xl"
+            className="relative z-10 mx-auto max-h-[340px] w-auto object-cover object-top drop-shadow-2xl sm:max-h-[440px] lg:max-h-none lg:w-full"
           />
         </motion.div>
       </div>

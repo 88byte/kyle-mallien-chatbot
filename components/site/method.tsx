@@ -1,6 +1,11 @@
+"use client";
+import { motion } from "motion/react";
+import { Search, Calculator, TrendingUp, Crown } from "lucide-react";
 import { PILLARS } from "@/lib/site";
 import { Reveal } from "./reveal";
 import { SectionEyebrow } from "./section-eyebrow";
+
+const ICONS = [Search, Calculator, TrendingUp, Crown];
 
 export function Method() {
   return (
@@ -17,7 +22,7 @@ export function Method() {
       <div className="container-tight">
         <Reveal className="mx-auto max-w-2xl text-center">
           <SectionEyebrow center>The Process</SectionEyebrow>
-          <h2 className="font-serif text-3xl font-medium tracking-tight sm:text-5xl">
+          <h2 className="font-serif text-3xl font-semibold tracking-tight sm:text-5xl">
             The F.U.E.L Process
           </h2>
           <p className="mt-5 text-foreground/65">
@@ -26,25 +31,53 @@ export function Method() {
           </p>
         </Reveal>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {PILLARS.map((pillar, i) => (
-            <Reveal key={pillar.step} delay={i * 0.08}>
-              <div className="group h-full rounded-3xl border border-white/10 bg-card/50 p-7 transition-colors hover:border-gold-500/40">
-                <div className="font-display flex h-14 w-14 items-center justify-center rounded-2xl bg-gold-500/10 text-3xl text-gradient-gold">
+        <div className="mt-16 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          {PILLARS.map((pillar, i) => {
+            const Icon = ICONS[i];
+            return (
+              <motion.div
+                key={pillar.step}
+                initial={{ opacity: 0, y: 28 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.6,
+                  delay: i * 0.1,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                viewport={{ once: true, margin: "-60px" }}
+                whileHover={{ y: -6 }}
+                className="group relative h-full overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-7 transition-colors hover:border-gold-500/50"
+              >
+                {/* Big ghosted letter watermark */}
+                <span className="font-display pointer-events-none absolute -right-2 -top-5 select-none text-[7rem] leading-none text-white/[0.04] transition-colors duration-500 group-hover:text-gold-500/10">
                   {pillar.step}
+                </span>
+
+                {/* Step rail */}
+                <div className="mb-6 flex items-center gap-3">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold-gradient text-primary-foreground shadow-lg shadow-gold-900/30 transition-transform duration-300 group-hover:scale-110">
+                    <Icon size={20} />
+                  </span>
+                  <span className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-300/70">
+                    Step {i + 1}
+                  </span>
                 </div>
-                <h3 className="mt-5 font-serif text-2xl font-medium">
+
+                <h3 className="font-serif text-2xl font-semibold">
                   {pillar.title}
                 </h3>
-                <p className="text-xs font-medium uppercase tracking-[0.14em] text-gold-300/70">
+                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-gold-300">
                   {pillar.subtitle}
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-foreground/65">
+                <p className="mt-4 text-sm leading-relaxed text-foreground/65">
                   {pillar.body}
                 </p>
-              </div>
-            </Reveal>
-          ))}
+
+                {/* Bottom accent line grows on hover */}
+                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-gold-gradient transition-all duration-500 group-hover:w-full" />
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

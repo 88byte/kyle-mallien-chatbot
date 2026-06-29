@@ -23,16 +23,27 @@ export function VideoSection() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          {/* Vertical video (198x426) — container matches its exact aspect */}
-          <div className="relative mx-auto aspect-[198/426] w-full max-w-[300px] overflow-hidden rounded-[1.75rem] border border-gold-500/25 bg-black shadow-2xl shadow-black/60">
+          {/* The source clip is a landscape video letterboxed inside a 198x426
+              portrait Vimeo canvas. We show it in a 16:9 frame and scale the
+              player up so the landscape footage fills it and the baked-in black
+              bars get clipped by overflow-hidden. */}
+          <div className="relative mx-auto aspect-video w-full max-w-3xl overflow-hidden rounded-2xl border border-gold-500/25 bg-black shadow-2xl shadow-black/60">
             {playing ? (
-              <iframe
-                src={`https://player.vimeo.com/video/${BRAND.vimeoId}?autoplay=1&title=0&byline=0&portrait=0&dnt=1`}
-                title="Kyle Mallien"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0 h-full w-full"
-              />
+              <div
+                className="absolute left-1/2 top-1/2 w-full"
+                style={{
+                  aspectRatio: "198 / 426",
+                  transform: "translate(-50%, -50%) scale(1.04)",
+                }}
+              >
+                <iframe
+                  src={`https://player.vimeo.com/video/${BRAND.vimeoId}?autoplay=1&title=0&byline=0&portrait=0&dnt=1`}
+                  title="Kyle Mallien"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  className="h-full w-full"
+                />
+              </div>
             ) : (
               <button
                 onClick={() => setPlaying(true)}
@@ -41,22 +52,18 @@ export function VideoSection() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={BRAND.portrait}
-                  alt="Kyle Mallien"
+                  src={BRAND.heroPhoto}
+                  alt="Kyle Mallien speaking"
                   loading="lazy"
-                  className="h-full w-full object-cover object-top brightness-[0.7] transition-all group-hover:brightness-[0.55]"
+                  className="h-full w-full object-cover brightness-[0.7] transition-all group-hover:brightness-[0.55]"
                 />
-                <span className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent" />
                 <span className="absolute inset-0 flex items-center justify-center">
-                  <span className="flex h-[64px] w-[64px] items-center justify-center rounded-full bg-gold-gradient shadow-xl transition-transform group-hover:scale-110">
+                  <span className="flex h-[72px] w-[72px] items-center justify-center rounded-full bg-gold-gradient shadow-xl transition-transform group-hover:scale-110">
                     <Play
-                      size={24}
+                      size={26}
                       className="ml-1 fill-primary-foreground text-primary-foreground"
                     />
                   </span>
-                </span>
-                <span className="absolute bottom-4 left-0 right-0 text-center text-sm font-medium text-white/90">
-                  Watch Alex&apos;s story
                 </span>
               </button>
             )}
