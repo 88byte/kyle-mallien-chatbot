@@ -10,14 +10,16 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/10 py-12">
+    <footer className="relative border-t border-line bg-paper py-12">
       <div className="container-page">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <a href="#top" className="flex items-center gap-2.5">
-            <Logo className="h-8 w-8" />
-            <span className="font-display text-sm font-semibold text-white">
+            <Logo className="h-9 w-9" />
+            <span className="font-display text-base font-semibold text-ink">
               Flavio DeOliveira
-              <span className="ml-1 font-normal text-slate-400">Consulting</span>
+              <span className="ml-1 font-sans text-sm font-normal text-ink-mute">
+                Consulting
+              </span>
             </span>
           </a>
 
@@ -26,7 +28,7 @@ export default function Footer() {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-sm text-slate-400 transition-colors hover:text-white"
+                className="text-sm text-ink-soft transition-colors hover:text-burnt"
               >
                 {l.label}
               </a>
@@ -34,7 +36,7 @@ export default function Footer() {
           </nav>
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/5 pt-6 text-xs text-slate-500 sm:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-line pt-6 text-xs text-ink-mute sm:flex-row">
           <p>
             © {new Date().getFullYear()} Flavio DeOliveira Consulting. All rights
             reserved.

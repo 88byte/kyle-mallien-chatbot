@@ -31,16 +31,18 @@ export default function Navbar() {
       <div
         className={`transition-all duration-300 ${
           scrolled
-            ? "border-b border-white/10 bg-ink-950/70 backdrop-blur-xl"
+            ? "border-b border-line bg-cream/85 backdrop-blur-xl"
             : "border-b border-transparent"
         }`}
       >
         <nav className="container-page flex h-16 items-center justify-between">
           <a href="#top" className="flex items-center gap-2.5" aria-label="Home">
-            <Logo className="h-8 w-8" />
-            <span className="font-display text-sm font-semibold tracking-tight text-white">
+            <Logo className="h-9 w-9" />
+            <span className="font-display text-base font-semibold tracking-tight text-ink">
               Flavio DeOliveira
-              <span className="ml-1 font-normal text-slate-400">Consulting</span>
+              <span className="ml-1 font-sans text-sm font-normal text-ink-mute">
+                Consulting
+              </span>
             </span>
           </a>
 
@@ -49,7 +51,7 @@ export default function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className="rounded-full px-4 py-2 text-sm text-slate-300 transition-colors hover:text-white"
+                className="rounded-full px-4 py-2 text-sm font-medium text-ink-soft transition-colors hover:text-burnt"
               >
                 {l.label}
               </a>
@@ -63,7 +65,7 @@ export default function Navbar() {
           </div>
 
           <button
-            className="md:hidden rounded-lg p-2 text-slate-200"
+            className="rounded-lg p-2 text-ink md:hidden"
             onClick={() => setOpen((v) => !v)}
             aria-label="Toggle menu"
           >
@@ -79,7 +81,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="overflow-hidden border-b border-white/10 bg-ink-950/95 backdrop-blur-xl md:hidden"
+            className="overflow-hidden border-b border-line bg-cream md:hidden"
           >
             <div className="container-page flex flex-col gap-1 py-4">
               {links.map((l) => (
@@ -87,7 +89,7 @@ export default function Navbar() {
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-lg px-3 py-3 text-base text-slate-200 hover:bg-white/5"
+                  className="rounded-lg px-3 py-3 text-base text-ink-soft hover:bg-ink/5"
                 >
                   {l.label}
                 </a>

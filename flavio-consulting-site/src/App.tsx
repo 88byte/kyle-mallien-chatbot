@@ -7,7 +7,6 @@ import Services from "./components/Services";
 import Stats from "./components/Stats";
 import Process from "./components/Process";
 import About from "./components/About";
-import Testimonial from "./components/Testimonial";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -24,7 +23,6 @@ export default function App() {
         <Stats />
         <Process />
         <About />
-        <Testimonial />
         <Contact />
       </main>
       <Footer />

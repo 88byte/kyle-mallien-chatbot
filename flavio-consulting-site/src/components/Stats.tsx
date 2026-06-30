@@ -5,10 +5,10 @@ import Reveal from "./Reveal";
 type Stat = { value: number; suffix: string; label: string };
 
 const stats: Stat[] = [
-  { value: 20, suffix: "+", label: "Years across SaaS, AI & hardware" },
+  { value: 20, suffix: "+", label: "Years across SaaS, AI, and hardware" },
   { value: 40, suffix: "%", label: "Typical reduction in manual busywork" },
   { value: 3, suffix: "x", label: "Faster delivery after workflow redesign" },
-  { value: 2023, suffix: "", label: "Founded — independent & senior-led" },
+  { value: 2023, suffix: "", label: "Founded, independent and senior led" },
 ];
 
 function Counter({ value, suffix }: { value: number; suffix: string }) {
@@ -26,11 +26,9 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
     return () => controls.stop();
   }, [inView, value]);
 
-  const formatted = value >= 1000 ? Math.round(display).toString() : Math.round(display).toString();
-
   return (
     <span ref={ref}>
-      {formatted}
+      {Math.round(display)}
       {suffix}
     </span>
   );
@@ -41,7 +39,7 @@ export default function Stats() {
     <section id="results" className="relative scroll-mt-24 py-16 sm:py-20">
       <div className="container-page">
         <Reveal>
-          <div className="grid grid-cols-2 gap-px overflow-hidden rounded-3xl glass shadow-card lg:grid-cols-4">
+          <div className="grid grid-cols-2 overflow-hidden rounded-3xl border border-line bg-paper shadow-soft lg:grid-cols-4">
             {stats.map((s, i) => (
               <motion.div
                 key={s.label}
@@ -49,14 +47,12 @@ export default function Stats() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.6 }}
-                className="relative p-8 text-center"
+                className="border-line p-8 text-center [&:not(:nth-child(2n))]:border-r lg:[&:not(:last-child)]:border-r [&:nth-child(-n+2)]:border-b lg:[&:nth-child(-n+2)]:border-b-0"
               >
-                <div className="font-display text-4xl font-bold text-white sm:text-5xl">
-                  <span className="gradient-text">
-                    <Counter value={s.value} suffix={s.suffix} />
-                  </span>
+                <div className="font-display text-5xl font-semibold text-burnt">
+                  <Counter value={s.value} suffix={s.suffix} />
                 </div>
-                <p className="mx-auto mt-3 max-w-[14rem] text-sm text-slate-400">
+                <p className="mx-auto mt-3 max-w-[14rem] text-sm text-ink-soft">
                   {s.label}
                 </p>
               </motion.div>
