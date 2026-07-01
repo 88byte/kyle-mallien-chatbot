@@ -13,7 +13,17 @@ const highlights = [
 export default function About() {
   return (
     <section id="about" className="relative scroll-mt-24 py-24 sm:py-32">
-      <div className="container-page grid items-center gap-14 lg:grid-cols-2">
+      <div className="container-page">
+        <Reveal>
+          <div className="flex items-baseline justify-between border-t-2 border-ink pt-4">
+            <span className="font-display text-base font-semibold text-burnt">05</span>
+            <span className="text-xs font-semibold uppercase tracking-[0.24em] text-ink-mute">
+              About
+            </span>
+          </div>
+        </Reveal>
+      </div>
+      <div className="container-page mt-12 grid items-center gap-14 lg:grid-cols-2">
         <Reveal>
           <div className="relative mx-auto w-full max-w-md">
             {/* solid offset block for depth */}
@@ -35,10 +45,9 @@ export default function About() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <span className="eyebrow">About</span>
-          <h2 className="mt-5 font-display text-4xl font-semibold tracking-tight text-ink sm:text-[2.75rem] sm:leading-[1.05]">
+          <h2 className="font-display text-4xl font-semibold tracking-tight text-ink sm:text-[2.75rem] sm:leading-[1.05]">
             Two decades turning complexity into{" "}
-            <span className="text-burnt">competitive advantage</span>
+            <span className="italic text-burnt">competitive advantage</span>
           </h2>
           <p className="mt-5 leading-relaxed text-ink-soft">
             I have spent over 20 years inside fast moving companies, from scaling

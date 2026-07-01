@@ -36,7 +36,7 @@ export default function Contact() {
                 Let's talk
               </span>
               <h2 className="mt-5 font-display text-4xl font-semibold tracking-tight text-cream sm:text-5xl">
-                Ready to work smarter?
+                Ready to work <span className="italic">smarter?</span>
               </h2>
               <p className="mt-4 max-w-md leading-relaxed text-cream/80">
                 Book a free, zero pressure strategy call. We will talk through

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Gauge, GraduationCap, Boxes, ArrowUpRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
-import Reveal from "./Reveal";
+import SectionHeader from "./SectionHeader";
 import { fadeUp, stagger } from "../lib/motion";
 
 type Service = {
@@ -96,17 +96,17 @@ export default function Services() {
   return (
     <section id="services" className="relative scroll-mt-24 py-24 sm:py-32">
       <div className="container-page">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">How I help</span>
-          <h2 className="mt-5 font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
-            Three ways we can{" "}
-            <span className="text-burnt">work together</span>
-          </h2>
-          <p className="mt-4 text-ink-soft">
-            Whether you need a sharp diagnosis, a sharper team, or a system built
-            from scratch, we start exactly where you are and go from there.
-          </p>
-        </Reveal>
+        <SectionHeader
+          number="02"
+          label="How I help"
+          title={
+            <>
+              Three ways we can{" "}
+              <span className="italic text-burnt">work together</span>
+            </>
+          }
+          desc="Whether you need a sharp diagnosis, a sharper team, or a system built from scratch, we start exactly where you are and go from there."
+        />
 
         <motion.div
           variants={stagger(0.15)}

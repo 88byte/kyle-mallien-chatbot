@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { AlertCircle } from "lucide-react";
 import Reveal from "./Reveal";
+import SectionHeader from "./SectionHeader";
 import { fadeUp, stagger } from "../lib/motion";
 
 const pains = [
@@ -16,18 +17,17 @@ export default function Challenges() {
   return (
     <section id="challenges" className="relative scroll-mt-24 py-24 sm:py-32">
       <div className="container-page">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">Sound familiar?</span>
-          <h2 className="mt-5 font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
-            Most teams do not have a{" "}
-            <span className="text-burnt">technology problem</span>
-          </h2>
-          <p className="mt-4 text-ink-soft">
-            They have a too many tools, too much manual work, and not enough time
-            problem. If any of this hits close to home, you are exactly who I
-            built this practice for.
-          </p>
-        </Reveal>
+        <SectionHeader
+          number="01"
+          label="Sound familiar?"
+          title={
+            <>
+              Most teams do not have a{" "}
+              <span className="italic text-burnt">technology problem</span>
+            </>
+          }
+          desc="They have a too many tools, too much manual work, and not enough time problem. If any of this hits close to home, you are exactly who I built this practice for."
+        />
 
         <motion.div
           variants={stagger(0.1)}

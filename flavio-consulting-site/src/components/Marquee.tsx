@@ -16,7 +16,7 @@ export default function Marquee() {
   return (
     <section className="relative border-y border-line bg-paper py-7">
       <div className="relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,#000_12%,#000_88%,transparent)]">
-        <div className="flex shrink-0 animate-marquee items-center gap-4 pr-4">
+        <div className="flex shrink-0 animate-marquee items-center gap-4 pr-4 hover:[animation-play-state:paused]">
           {row.map((c, i) => (
             <span
               key={i}

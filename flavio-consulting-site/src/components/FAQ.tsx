@@ -68,11 +68,20 @@ function Item({ qa, index }: { qa: QA; index: number }) {
 export default function FAQ() {
   return (
     <section id="faq" className="relative scroll-mt-24 py-24 sm:py-32">
-      <div className="container-page grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+      <div className="container-page">
         <Reveal>
-          <span className="eyebrow">Questions</span>
-          <h2 className="mt-5 font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
-            Good to <span className="text-burnt">know</span>
+          <div className="flex items-baseline justify-between border-t-2 border-ink pt-4">
+            <span className="font-display text-base font-semibold text-burnt">06</span>
+            <span className="text-xs font-semibold uppercase tracking-[0.24em] text-ink-mute">
+              Questions
+            </span>
+          </div>
+        </Reveal>
+      </div>
+      <div className="container-page mt-10 grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+        <Reveal>
+          <h2 className="font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
+            Good to <span className="italic text-burnt">know</span>
           </h2>
           <p className="mt-4 max-w-sm text-ink-soft">
             A few things people usually ask before we talk. Have another? Just put

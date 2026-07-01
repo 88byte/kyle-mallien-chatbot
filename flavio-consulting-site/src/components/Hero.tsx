@@ -20,14 +20,48 @@ export default function Hero() {
               Systems · Automation · Operations
             </motion.span>
 
-            <motion.h1
-              variants={fadeUp}
-              className="mt-6 font-display text-5xl font-semibold leading-[1.02] tracking-tight text-ink sm:text-6xl lg:text-7xl"
-            >
-              Work smarter.
-              <br />
-              <span className="text-burnt">Scale faster.</span>
-            </motion.h1>
+            <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.06] tracking-tight text-ink sm:text-6xl lg:text-7xl">
+              <span className="block overflow-hidden pb-1">
+                <motion.span
+                  className="block"
+                  initial={{ y: "110%" }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
+                >
+                  Work{" "}
+                  <span className="relative inline-block">
+                    smarter.
+                    <svg
+                      viewBox="0 0 220 16"
+                      preserveAspectRatio="none"
+                      className="absolute -bottom-1.5 left-0 h-3 w-full sm:-bottom-2.5 sm:h-4"
+                      aria-hidden="true"
+                    >
+                      <motion.path
+                        d="M6 11 C 55 4, 150 3, 214 8"
+                        fill="none"
+                        stroke="#9A3412"
+                        strokeWidth="6"
+                        strokeLinecap="round"
+                        initial={{ pathLength: 0 }}
+                        animate={{ pathLength: 1 }}
+                        transition={{ duration: 0.7, ease: "easeOut", delay: 0.9 }}
+                      />
+                    </svg>
+                  </span>
+                </motion.span>
+              </span>
+              <span className="block overflow-hidden pb-1">
+                <motion.span
+                  className="block italic text-burnt"
+                  initial={{ y: "110%" }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
+                >
+                  Scale faster.
+                </motion.span>
+              </span>
+            </h1>
 
             <motion.p
               variants={fadeUp}

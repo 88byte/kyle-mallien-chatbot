@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Workflow, Sparkles, Cable, Layers, Building2, Route } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
-import Reveal from "./Reveal";
+import SectionHeader from "./SectionHeader";
 import { fadeUp, stagger } from "../lib/motion";
 
 type Capability = { icon: LucideIcon; title: string; desc: string };
@@ -46,17 +46,16 @@ export default function Capabilities() {
       className="relative scroll-mt-24 bg-paper py-24 sm:py-32"
     >
       <div className="container-page">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">What I build</span>
-          <h2 className="mt-5 font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
-            Real work, <span className="text-burnt">not just advice</span>
-          </h2>
-          <p className="mt-4 text-ink-soft">
-            Over the years I have helped businesses in all of these ways, hands
-            on and shoulder to shoulder with their teams. Here is where I do my
-            best work.
-          </p>
-        </Reveal>
+        <SectionHeader
+          number="03"
+          label="What I build"
+          title={
+            <>
+              Real work, <span className="italic text-burnt">not just advice</span>
+            </>
+          }
+          desc="Over the years I have helped businesses in all of these ways, hands on and shoulder to shoulder with their teams. Here is where I do my best work."
+        />
 
         <motion.div
           variants={stagger(0.1)}
