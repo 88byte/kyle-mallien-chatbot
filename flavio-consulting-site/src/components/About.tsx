@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Check } from "lucide-react";
 import Reveal from "./Reveal";
 import Portrait from "./Portrait";
 
@@ -12,44 +11,36 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="about" className="relative scroll-mt-24 py-24 sm:py-32">
+    <section id="about" className="relative scroll-mt-24 bg-paper py-24 sm:py-32">
       <div className="container-page">
         <Reveal>
           <div className="flex items-baseline justify-between border-t-2 border-ink pt-4">
-            <span className="font-display text-base font-semibold text-burnt">05</span>
-            <span className="text-xs font-semibold uppercase tracking-[0.24em] text-ink-mute">
-              About
-            </span>
+            <span className="font-display text-sm font-semibold text-burnt">05</span>
+            <span className="label">About</span>
           </div>
         </Reveal>
       </div>
-      <div className="container-page mt-12 grid items-center gap-14 lg:grid-cols-2">
+
+      <div className="container-page mt-14 grid items-start gap-14 lg:grid-cols-[0.85fr_1.15fr]">
         <Reveal>
-          <div className="relative mx-auto w-full max-w-md">
-            {/* solid offset block for depth */}
-            <div className="absolute -bottom-5 -left-5 h-full w-full rounded-[2rem] bg-burnt/90" />
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-line bg-ink shadow-frame">
+          <div className="relative mr-4 max-w-md">
+            <div className="absolute -bottom-4 -left-4 h-full w-full bg-burnt" />
+            <div className="relative aspect-[4/5] overflow-hidden bg-ink">
               <Portrait />
             </div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.85 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              className="absolute -right-4 bottom-10 rounded-2xl border border-line bg-cream px-5 py-4 shadow-soft sm:-right-6"
-            >
+            <div className="absolute -right-4 bottom-8 border border-ink/15 bg-cream px-5 py-4">
               <p className="font-display text-2xl font-semibold text-ink">20+ yrs</p>
-              <p className="text-xs text-ink-mute">SaaS · AI · Hardware</p>
-            </motion.div>
+              <p className="label mt-1 !tracking-[0.2em]">SaaS · AI · Hardware</p>
+            </div>
           </div>
         </Reveal>
 
         <Reveal delay={0.1}>
-          <h2 className="font-display text-4xl font-semibold tracking-tight text-ink sm:text-[2.75rem] sm:leading-[1.05]">
+          <h2 className="font-display text-4xl font-semibold uppercase leading-[1.02] tracking-[-0.01em] text-ink sm:text-5xl">
             Two decades turning complexity into{" "}
-            <span className="italic text-burnt">competitive advantage</span>
+            <span className="text-burnt">competitive advantage</span>
           </h2>
-          <p className="mt-5 leading-relaxed text-ink-soft">
+          <p className="mt-7 max-w-xl text-lg leading-relaxed text-ink-soft">
             I have spent over 20 years inside fast moving companies, from scaling
             SaaS at Citrix to pioneering spatial computing at Magic Leap, and
             helping startups find their footing. Along the way I have built custom
@@ -57,26 +48,24 @@ export default function About() {
             automated the busywork, and rebuilt customer journeys that were
             quietly costing teams their growth.
           </p>
-          <p className="mt-4 leading-relaxed text-ink-soft">
+          <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-soft">
             I am not a slide deck consultant. I am the person who gets in, figures
             out what is really going on, and builds the fix with your team.
             Senior, hands on, and focused on outcomes you can actually measure.
           </p>
 
-          <ul className="mt-7 space-y-3">
+          <ul className="mt-10">
             {highlights.map((h, i) => (
               <motion.li
                 key={h}
-                initial={{ opacity: 0, x: -16 }}
+                initial={{ opacity: 0, x: -14 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className="flex items-start gap-3 text-ink"
+                transition={{ delay: i * 0.07 }}
+                className="flex items-center gap-4 border-t border-ink/20 py-4 text-ink"
               >
-                <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-burnt">
-                  <Check size={13} className="text-cream" />
-                </span>
-                {h}
+                <span className="h-2 w-2 flex-shrink-0 bg-burnt" />
+                <span className="font-medium">{h}</span>
               </motion.li>
             ))}
           </ul>

@@ -31,19 +31,19 @@ const faqs: QA[] = [
 function Item({ qa, index }: { qa: QA; index: number }) {
   const [open, setOpen] = useState(index === 0);
   return (
-    <div className="border-b border-line">
+    <div className="border-t border-ink/20">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex w-full items-center justify-between gap-4 py-5 text-left"
+        className="flex w-full items-center justify-between gap-6 py-6 text-left"
         aria-expanded={open}
       >
-        <span className="font-display text-lg font-semibold text-ink sm:text-xl">
+        <span className="font-display text-xl font-semibold text-ink sm:text-2xl">
           {qa.q}
         </span>
         <motion.span
           animate={{ rotate: open ? 45 : 0 }}
           transition={{ duration: 0.2 }}
-          className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-burnt-tint text-burnt"
+          className="flex h-9 w-9 flex-shrink-0 items-center justify-center border border-ink/25 text-burnt"
         >
           <Plus size={18} />
         </motion.span>
@@ -57,7 +57,7 @@ function Item({ qa, index }: { qa: QA; index: number }) {
             transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
             className="overflow-hidden"
           >
-            <p className="max-w-2xl pb-6 leading-relaxed text-ink-soft">{qa.a}</p>
+            <p className="max-w-2xl pb-7 leading-relaxed text-ink-soft">{qa.a}</p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -71,29 +71,27 @@ export default function FAQ() {
       <div className="container-page">
         <Reveal>
           <div className="flex items-baseline justify-between border-t-2 border-ink pt-4">
-            <span className="font-display text-base font-semibold text-burnt">06</span>
-            <span className="text-xs font-semibold uppercase tracking-[0.24em] text-ink-mute">
-              Questions
-            </span>
+            <span className="font-display text-sm font-semibold text-burnt">06</span>
+            <span className="label">Questions</span>
           </div>
         </Reveal>
       </div>
-      <div className="container-page mt-10 grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+      <div className="container-page mt-12 grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <Reveal>
-          <h2 className="font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
-            Good to <span className="italic text-burnt">know</span>
+          <h2 className="font-display text-4xl font-semibold uppercase leading-[1.02] tracking-[-0.01em] text-ink sm:text-5xl">
+            Good to <span className="text-burnt">know</span>
           </h2>
-          <p className="mt-4 max-w-sm text-ink-soft">
+          <p className="mt-6 max-w-sm leading-relaxed text-ink-soft">
             A few things people usually ask before we talk. Have another? Just put
             it in the form and I will answer it straight.
           </p>
-          <a href="#contact" className="btn-primary mt-7 inline-flex">
+          <a href="#contact" className="btn-primary mt-8 inline-flex">
             Book a free strategy call
           </a>
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div>
+          <div className="border-b border-ink/20">
             {faqs.map((qa, i) => (
               <Item key={qa.q} qa={qa} index={i} />
             ))}

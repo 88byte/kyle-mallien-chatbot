@@ -14,16 +14,17 @@ const capabilities = [
 export default function Marquee() {
   const row = [...capabilities, ...capabilities];
   return (
-    <section className="relative border-y border-line bg-paper py-7">
-      <div className="relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,#000_12%,#000_88%,transparent)]">
-        <div className="flex shrink-0 animate-marquee items-center gap-4 pr-4 hover:[animation-play-state:paused]">
+    <section className="relative overflow-hidden border-y border-ink/15 py-8">
+      <div className="flex overflow-hidden">
+        <div className="flex shrink-0 animate-marquee items-center gap-10 pr-10 hover:[animation-play-state:paused]">
           {row.map((c, i) => (
             <span
               key={i}
-              className="flex items-center gap-4 whitespace-nowrap font-display text-lg font-medium text-ink-soft"
+              className={`whitespace-nowrap font-display text-4xl font-semibold uppercase tracking-tight sm:text-5xl ${
+                i % 2 === 0 ? "text-ink" : "text-stroke-burnt"
+              }`}
             >
               {c}
-              <span className="h-1.5 w-1.5 rounded-full bg-burnt" />
             </span>
           ))}
         </div>

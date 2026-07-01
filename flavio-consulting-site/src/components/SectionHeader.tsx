@@ -6,41 +6,30 @@ type Props = {
   label: string;
   title: ReactNode;
   desc?: string;
-  align?: "center" | "left";
 };
 
 /**
- * Editorial section opener: a heavy top rule with an index number on the
- * left and a small caps label on the right, then the display title below.
+ * Editorial section opener: heavy top rule, index number left, small caps
+ * label right, then a large left aligned display title.
  */
-export default function SectionHeader({
-  number,
-  label,
-  title,
-  desc,
-  align = "center",
-}: Props) {
+export default function SectionHeader({ number, label, title, desc }: Props) {
   return (
     <Reveal>
       <div className="flex items-baseline justify-between border-t-2 border-ink pt-4">
-        <span className="font-display text-base font-semibold text-burnt">
+        <span className="font-display text-sm font-semibold text-burnt">
           {number}
         </span>
-        <span className="text-xs font-semibold uppercase tracking-[0.24em] text-ink-mute">
-          {label}
-        </span>
+        <span className="label">{label}</span>
       </div>
-      <div
-        className={
-          align === "center"
-            ? "mx-auto mt-10 max-w-2xl text-center"
-            : "mt-10 max-w-2xl"
-        }
-      >
-        <h2 className="font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
+      <div className="mt-10 max-w-4xl">
+        <h2 className="font-display text-4xl font-semibold uppercase leading-[1.02] tracking-[-0.01em] text-ink sm:text-6xl">
           {title}
         </h2>
-        {desc && <p className="mt-4 text-ink-soft">{desc}</p>}
+        {desc && (
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
+            {desc}
+          </p>
+        )}
       </div>
     </Reveal>
   );

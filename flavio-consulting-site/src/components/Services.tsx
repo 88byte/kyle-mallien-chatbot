@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
-import { Gauge, GraduationCap, Boxes, ArrowUpRight } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 import { fadeUp, stagger } from "../lib/motion";
 
 type Service = {
-  icon: LucideIcon;
   tag: string;
   title: string;
   desc: string;
@@ -14,83 +12,24 @@ type Service = {
 
 const services: Service[] = [
   {
-    icon: Gauge,
     tag: "Optimize",
     title: "Find what's slowing you down",
     desc: "A deep audit of your workflows, tools, and operations to surface the bottlenecks quietly costing you time, money, and momentum.",
-    points: [
-      "Operational and workflow audits",
-      "Process mapping and redesign",
-      "Tooling and cost rationalization",
-    ],
+    points: ["Operational audits", "Process redesign", "Cost rationalization"],
   },
   {
-    icon: GraduationCap,
     tag: "Elevate",
     title: "Upskill your team for what's next",
     desc: "Practical, hands on training so your people confidently adopt automation, AI, and modern tools, then carry the momentum forward.",
-    points: [
-      "AI and automation enablement",
-      "Tool integration playbooks",
-      "Team workshops and coaching",
-    ],
+    points: ["AI enablement", "Integration playbooks", "Workshops and coaching"],
   },
   {
-    icon: Boxes,
     tag: "Build",
     title: "Ship systems that do the work",
     desc: "Custom solutions designed and built around your business. CRM setups, AI integrations, and automations that run while you sleep.",
-    points: [
-      "CRM design and implementation",
-      "AI and LLM integrations",
-      "Complete automation systems",
-    ],
+    points: ["CRM implementation", "AI and LLM integration", "Automation systems"],
   },
 ];
-
-function ServiceCard({ service, index }: { service: Service; index: number }) {
-  const Icon = service.icon;
-  return (
-    <motion.div
-      variants={fadeUp}
-      className="group relative flex flex-col rounded-3xl border border-line bg-cream p-7 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:border-burnt/40"
-    >
-      <div className="flex items-center justify-between">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-burnt-tint">
-          <Icon size={22} className="text-burnt" />
-        </div>
-        <span className="font-display text-5xl font-semibold text-ink/10 transition-colors group-hover:text-burnt/20">
-          0{index + 1}
-        </span>
-      </div>
-
-      <p className="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-burnt">
-        {service.tag}
-      </p>
-      <h3 className="mt-2 font-display text-2xl font-semibold text-ink">
-        {service.title}
-      </h3>
-      <p className="mt-3 text-sm leading-relaxed text-ink-soft">{service.desc}</p>
-
-      <ul className="mt-5 space-y-2.5">
-        {service.points.map((p) => (
-          <li key={p} className="flex items-center gap-2.5 text-sm text-ink-soft">
-            <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-burnt" />
-            {p}
-          </li>
-        ))}
-      </ul>
-
-      <a
-        href="#contact"
-        className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-burnt transition-colors hover:text-burnt-dark"
-      >
-        Start here
-        <ArrowUpRight size={15} />
-      </a>
-    </motion.div>
-  );
-}
 
 export default function Services() {
   return (
@@ -102,24 +41,49 @@ export default function Services() {
           title={
             <>
               Three ways we can{" "}
-              <span className="italic text-burnt">work together</span>
+              <span className="text-burnt">work together</span>
             </>
           }
           desc="Whether you need a sharp diagnosis, a sharper team, or a system built from scratch, we start exactly where you are and go from there."
         />
-
-        <motion.div
-          variants={stagger(0.15)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
-          className="mt-14 grid gap-6 md:grid-cols-3"
-        >
-          {services.map((s, i) => (
-            <ServiceCard key={s.tag} service={s} index={i} />
-          ))}
-        </motion.div>
       </div>
+
+      <motion.div
+        variants={stagger(0.12)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.15 }}
+        className="mt-16 border-b border-ink/20"
+      >
+        {services.map((s, i) => (
+          <motion.a
+            key={s.tag}
+            href="#contact"
+            variants={fadeUp}
+            className="group block border-t border-ink/20 transition-colors duration-300 hover:bg-ink"
+          >
+            <div className="container-page grid gap-4 py-10 sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-10 sm:py-12">
+              <span className="font-display text-sm font-semibold text-burnt">
+                0{i + 1}
+              </span>
+              <div>
+                <h3 className="font-display text-4xl font-semibold uppercase tracking-tight text-ink transition-colors duration-300 group-hover:text-cream sm:text-6xl">
+                  {s.tag}
+                </h3>
+                <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-ink-soft transition-colors duration-300 group-hover:text-cream/75">
+                  {s.desc}
+                </p>
+                <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-ink-mute transition-colors duration-300 group-hover:text-burnt">
+                  {s.points.join("  ·  ")}
+                </p>
+              </div>
+              <span className="hidden h-14 w-14 items-center justify-center border border-ink/25 text-ink transition-all duration-300 group-hover:border-burnt group-hover:bg-burnt group-hover:text-cream sm:flex">
+                <ArrowUpRight size={22} />
+              </span>
+            </div>
+          </motion.a>
+        ))}
+      </motion.div>
     </section>
   );
 }

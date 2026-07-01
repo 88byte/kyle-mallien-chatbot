@@ -13,12 +13,12 @@ export default function Portrait({ className = "" }: Props) {
   if (failed) {
     return (
       <div
-        className={`flex h-full w-full items-center justify-center bg-burnt ${className}`}
+        className={`flex h-full w-full items-center justify-center bg-ink ${className}`}
         aria-label="Flavio DeOliveira"
       >
         <div className="text-center">
           <div className="font-display text-7xl font-semibold text-cream">FD</div>
-          <p className="mt-2 text-xs uppercase tracking-[0.3em] text-cream/70">
+          <p className="mt-2 text-xs uppercase tracking-[0.3em] text-cream/60">
             Founder &amp; Principal
           </p>
         </div>

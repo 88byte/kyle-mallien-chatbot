@@ -2,6 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Clash Display";
+  src: url("/fonts/clash-display-500.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url("/fonts/clash-display-600.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url("/fonts/clash-display-700.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/satoshi-400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/satoshi-500.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/satoshi-700.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -13,53 +50,49 @@
   }
 
   ::selection {
-    background: rgba(154, 52, 18, 0.18);
-    color: #211c16;
+    background: #9a3412;
+    color: #f7f3ec;
   }
 
   ::-webkit-scrollbar {
-    width: 11px;
+    width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #f2e9db;
+    background: #f7f3ec;
   }
   ::-webkit-scrollbar-thumb {
-    background: #9a3412;
-    border-radius: 999px;
-    border: 3px solid #f2e9db;
+    background: #191511;
+    border: 2px solid #f7f3ec;
   }
 }
 
 @layer components {
   .container-page {
-    @apply mx-auto w-full max-w-7xl px-6 sm:px-8;
+    @apply mx-auto w-full max-w-[88rem] px-6 sm:px-10;
   }
 
-  .eyebrow {
-    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-burnt;
+  /* Small caps micro label */
+  .label {
+    @apply text-[11px] font-semibold uppercase tracking-[0.3em] text-ink-mute;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-burnt px-6 py-3 text-sm font-semibold text-cream shadow-soft transition-all duration-200 hover:bg-burnt-dark hover:-translate-y-0.5;
+    @apply inline-flex items-center justify-center gap-3 bg-burnt px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-cream transition-colors duration-300 hover:bg-ink;
+  }
+
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-3 bg-ink px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-cream transition-colors duration-300 hover:bg-burnt;
   }
 
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink/20 bg-transparent px-6 py-3 text-sm font-semibold text-ink transition-colors duration-200 hover:border-ink/50 hover:bg-ink/5;
-  }
-
-  .btn-light {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-cream px-6 py-3 text-sm font-semibold text-burnt-dark shadow-soft transition-all duration-200 hover:-translate-y-0.5;
-  }
-
-  .card {
-    @apply rounded-3xl border border-line bg-cream shadow-soft;
+    @apply inline-flex items-center justify-center gap-3 border border-ink/30 px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-ink transition-colors duration-300 hover:border-ink hover:bg-ink hover:text-cream;
   }
 }
 
-/* Subtle warm dotted texture, very low contrast */
-.dotgrid {
-  background-image: radial-gradient(rgba(94, 36, 16, 0.07) 1px, transparent 1px);
-  background-size: 26px 26px;
+/* Outlined display type for the marquee */
+.text-stroke-burnt {
+  -webkit-text-stroke: 1.5px #9a3412;
+  color: transparent;
 }
 
 @media (prefers-reduced-motion: reduce) {

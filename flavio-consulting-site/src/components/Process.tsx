@@ -25,40 +25,39 @@ const steps: Step[] = [
 
 export default function Process() {
   return (
-    <section id="process" className="relative scroll-mt-24 bg-paper py-24 sm:py-32">
+    <section id="process" className="relative scroll-mt-24 py-24 sm:py-32">
       <div className="container-page">
         <SectionHeader
           number="04"
           label="How we work"
           title={
             <>
-              A clear path from{" "}
-              <span className="italic text-burnt">chaos to clarity</span>
+              A clear path from <span className="text-burnt">chaos to clarity</span>
             </>
           }
           desc="A proven, transparent process so you always know what is happening and why it matters."
         />
 
         <motion.div
-          variants={stagger(0.14)}
+          variants={stagger(0.12)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-16 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-16 grid gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-4"
         >
           {steps.map((s, i) => (
             <motion.div
               key={s.title}
               variants={fadeUp}
-              className="group border-t-2 border-ink/15 pt-6 transition-colors duration-300 hover:border-burnt"
+              className="group border-t border-ink/25 pt-6 transition-colors duration-300 hover:border-burnt"
             >
-              <span className="font-display text-6xl font-semibold leading-none text-burnt/25 transition-colors duration-300 group-hover:text-burnt">
+              <span className="font-display text-7xl font-semibold leading-none text-ink/15 transition-colors duration-300 group-hover:text-burnt">
                 {i + 1}
               </span>
-              <h3 className="mt-4 font-display text-xl font-semibold text-ink">
+              <h3 className="mt-5 font-display text-xl font-semibold uppercase tracking-tight text-ink">
                 {s.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+              <p className="mt-2.5 text-sm leading-relaxed text-ink-soft">
                 {s.desc}
               </p>
             </motion.div>
