@@ -8,19 +8,19 @@ type Step = { title: string; desc: string };
 const steps: Step[] = [
   {
     title: "Discover",
-    desc: "We dig into how your business actually runs. The tools, the handoffs, the friction. No assumptions, just clarity.",
+    desc: "We map how your business actually runs. The tools, the handoffs, the friction. No assumptions, just clarity.",
   },
   {
     title: "Design",
-    desc: "Together we map a pragmatic plan: what to fix first, what to automate, and the highest leverage wins to chase.",
+    desc: "You get a pragmatic plan: what to fix first, what to automate, and the wins that pay for the work.",
   },
   {
-    title: "Build and Deploy",
-    desc: "We implement the integrations, automations, AI, and the training to back it. Real systems, in production, fast.",
+    title: "Build and deploy",
+    desc: "I ship the integrations, automations, and AI, then train your team to run them. Real systems, in production, fast.",
   },
   {
-    title: "Measure and Scale",
-    desc: "We track the impact, tune what is working, and set you up to keep compounding the gains long after we are done.",
+    title: "Measure and scale",
+    desc: "We track the impact, tune what works, and set you up to keep compounding the gains after I am gone.",
   },
 ];
 
@@ -33,10 +33,11 @@ export default function Process() {
           label="How we work"
           title={
             <>
-              A clear path from <span className="text-burnt">chaos to clarity</span>
+              From first call to{" "}
+              <span className="text-burnt">lasting change</span>
             </>
           }
-          desc="A proven, transparent process so you always know what is happening and why it matters."
+          desc="No black box consulting here. You will always know what is happening, what comes next, and why it matters."
         />
 
         <SwipeHint />
@@ -52,12 +53,12 @@ export default function Process() {
             <motion.div
               key={s.title}
               variants={fadeUp}
-              className="group border-t border-ink/25 pt-6 transition-colors duration-300 hover:border-burnt max-sm:w-[74vw] max-sm:shrink-0 max-sm:snap-start max-sm:border max-sm:border-ink/15 max-sm:bg-paper max-sm:p-6"
+              className="group border-t border-ink/25 pt-6 transition-colors duration-300 hover:border-burnt max-sm:w-[74vw] max-sm:shrink-0 max-sm:snap-start max-sm:rounded-2xl max-sm:border max-sm:border-ink/15 max-sm:bg-paper max-sm:p-6"
             >
-              <span className="font-display text-7xl font-semibold leading-none text-ink/15 transition-colors duration-300 group-hover:text-burnt max-sm:text-burnt">
+              <span className="font-display text-6xl font-medium leading-none text-ink/15 transition-colors duration-300 group-hover:text-burnt max-sm:text-burnt">
                 {i + 1}
               </span>
-              <h3 className="mt-5 font-display text-xl font-semibold uppercase tracking-tight text-ink max-sm:mt-7">
+              <h3 className="mt-5 font-display text-xl font-medium tracking-tight text-ink max-sm:mt-7">
                 {s.title}
               </h3>
               <p className="mt-2.5 text-sm leading-relaxed text-ink-soft">

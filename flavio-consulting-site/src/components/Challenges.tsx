@@ -5,12 +5,12 @@ import SwipeHint from "./SwipeHint";
 import { fadeUp, stagger } from "../lib/motion";
 
 const pains = [
-  "Your team is drowning in manual work that software should be handling.",
-  "You have a stack of tools that do not talk to each other.",
-  "Growth has outpaced your processes, and everything feels held together with tape.",
-  "You know you need automation and AI, but not where to start.",
-  "Customer experience is slipping through the cracks between teams.",
-  "You need to build or scale a function, and hiring alone will not fix it.",
+  "Your team burns hours on work a system should be doing.",
+  "Your tools do not talk to each other, so your people play messenger.",
+  "Growth outpaced your processes and now everything feels duct taped.",
+  "You know AI could help. Nobody has time to figure out where.",
+  "Customers feel the cracks between your teams.",
+  "You are scaling a team without the systems to hold it up.",
 ];
 
 export default function Challenges() {
@@ -22,11 +22,11 @@ export default function Challenges() {
           label="Sound familiar?"
           title={
             <>
-              Most teams do not have a{" "}
-              <span className="text-burnt">technology problem</span>
+              You do not need more software. You need it{" "}
+              <span className="text-burnt">working together.</span>
             </>
           }
-          desc="They have a too many tools, too much manual work, and not enough time problem. If any of this hits close to home, you are exactly who I built this practice for."
+          desc="Growing businesses rarely have a technology problem. They have a tangle problem. Too many tools, too much manual work, not enough time. If that sounds like home, you are in the right place."
         />
 
         <SwipeHint />
@@ -42,7 +42,7 @@ export default function Challenges() {
             <motion.div
               key={p}
               variants={fadeUp}
-              className="border-t border-ink/20 pt-5 max-sm:flex max-sm:w-[74vw] max-sm:shrink-0 max-sm:snap-start max-sm:flex-col max-sm:justify-between max-sm:border max-sm:border-ink/15 max-sm:bg-paper max-sm:p-6"
+              className="border-t border-ink/20 pt-5 max-sm:flex max-sm:w-[74vw] max-sm:shrink-0 max-sm:snap-start max-sm:flex-col max-sm:justify-between max-sm:rounded-2xl max-sm:border max-sm:border-ink/15 max-sm:bg-paper max-sm:p-6"
             >
               <span className="font-display text-sm font-semibold text-burnt max-sm:text-3xl">
                 {String(i + 1).padStart(2, "0")}
@@ -54,10 +54,10 @@ export default function Challenges() {
           ))}
         </motion.div>
 
-        <Reveal className="mt-16">
+        <Reveal className="mt-16 max-sm:mt-10">
           <p className="max-w-2xl font-display text-2xl font-medium leading-snug text-ink sm:text-3xl">
-            Whatever the tangle, I have almost certainly untangled something
-            like it before.
+            Whatever your tangle looks like,{" "}
+            <span className="text-burnt">I have untangled one like it before.</span>
           </p>
         </Reveal>
       </div>

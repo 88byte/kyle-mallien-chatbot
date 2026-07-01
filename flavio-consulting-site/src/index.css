@@ -78,15 +78,15 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-3 bg-burnt px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-cream transition-colors duration-300 hover:bg-ink;
+    @apply inline-flex items-center justify-center gap-2.5 rounded-full bg-burnt px-7 py-3.5 text-sm font-semibold text-cream transition-colors duration-300 hover:bg-ink;
   }
 
   .btn-dark {
-    @apply inline-flex items-center justify-center gap-3 bg-ink px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-cream transition-colors duration-300 hover:bg-burnt;
+    @apply inline-flex items-center justify-center gap-2.5 rounded-full bg-ink px-7 py-3.5 text-sm font-semibold text-cream transition-colors duration-300 hover:bg-burnt;
   }
 
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-3 border border-ink/30 px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-ink transition-colors duration-300 hover:border-ink hover:bg-ink hover:text-cream;
+    @apply inline-flex items-center justify-center gap-2.5 rounded-full border border-ink/25 px-7 py-3.5 text-sm font-semibold text-ink transition-colors duration-300 hover:border-ink hover:bg-ink hover:text-cream;
   }
 }
 

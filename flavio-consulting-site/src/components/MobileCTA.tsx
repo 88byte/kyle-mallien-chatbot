@@ -41,13 +41,13 @@ export default function MobileCTA() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 90, opacity: 0 }}
           transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-x-4 z-40 flex items-center justify-between bg-ink py-3.5 pl-5 pr-3.5 text-cream shadow-[0_18px_40px_-12px_rgba(25,21,17,0.55)] sm:hidden"
+          className="fixed inset-x-4 z-40 flex items-center justify-between rounded-full bg-ink py-3 pl-6 pr-3 text-cream shadow-[0_18px_40px_-12px_rgba(25,21,17,0.55)] sm:hidden"
           style={{ bottom: "max(1rem, env(safe-area-inset-bottom))" }}
         >
-          <span className="text-xs font-bold uppercase tracking-[0.18em]">
+          <span className="text-sm font-semibold">
             Book a free strategy call
           </span>
-          <span className="flex h-9 w-9 items-center justify-center bg-burnt">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-burnt">
             <ArrowRight size={16} />
           </span>
         </motion.a>

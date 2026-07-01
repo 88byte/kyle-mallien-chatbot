@@ -23,16 +23,16 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-4"
         >
-          <span className="h-2.5 w-2.5 bg-burnt" />
+          <span className="h-2.5 w-2.5 rounded-full bg-burnt" />
           <span className="label !text-ink-soft">
             Systems · Automation · Operations
           </span>
         </motion.div>
 
-        <h1 className="mt-8 font-display font-semibold uppercase leading-[0.92] tracking-[-0.01em] text-ink max-sm:mt-6">
+        <h1 className="mt-8 font-display font-semibold leading-[0.98] tracking-[-0.02em] text-ink max-sm:mt-6">
           <span className="block overflow-hidden">
             <motion.span
-              className="block text-[16.5vw] sm:text-[10vw] lg:text-[8.5rem]"
+              className="block text-[14.5vw] sm:text-[9vw] lg:text-[7.5rem]"
               {...rise(0.1)}
             >
               Work smarter.
@@ -40,7 +40,7 @@ export default function Hero() {
           </span>
           <span className="block overflow-hidden">
             <motion.span
-              className="block text-[16.5vw] text-burnt sm:text-[10vw] lg:text-[8.5rem]"
+              className="block text-[14.5vw] text-burnt sm:text-[9vw] lg:text-[7.5rem]"
               {...rise(0.24)}
             >
               Scale faster.
@@ -55,10 +55,9 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 0.7 }}
           >
             <p className="max-w-md text-lg leading-relaxed text-ink-soft max-sm:text-base">
-              For over 20 years I have helped companies build the processes,
-              tools, and teams that make growth feel effortless. I find what is
-              slowing you down, then design and build the systems that fix it
-              for good.
+              Your team is capable of more. I design the processes, connect the
+              tools, and build the automation that proves it. You get your hours
+              back. Your business gets its momentum back.
             </p>
             <div className="mt-8 flex flex-col gap-3 max-sm:mt-6 sm:flex-row">
               <a href="#contact" className="btn-primary group">
@@ -81,8 +80,8 @@ export default function Hero() {
               className="mt-9 flex items-center gap-5 sm:hidden"
             >
               <div className="relative h-28 w-24 shrink-0">
-                <div className="absolute -bottom-2 -right-2 h-full w-full bg-burnt" />
-                <div className="relative h-full w-full overflow-hidden bg-ink">
+                <div className="absolute -bottom-2 -right-2 h-full w-full rounded-2xl bg-burnt" />
+                <div className="relative h-full w-full overflow-hidden rounded-2xl bg-ink">
                   <Portrait compact />
                 </div>
               </div>
@@ -122,8 +121,8 @@ export default function Hero() {
             transition={{ delay: 0.74, duration: 0.7 }}
             className="relative hidden w-72 sm:block"
           >
-            <div className="absolute -bottom-4 -right-4 h-full w-full bg-burnt" />
-            <div className="relative aspect-[4/5] overflow-hidden bg-ink">
+            <div className="absolute -bottom-4 -right-4 h-full w-full rounded-[1.75rem] bg-burnt" />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] bg-ink">
               <Portrait />
             </div>
           </motion.div>

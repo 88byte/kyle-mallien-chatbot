@@ -8,27 +8,27 @@ type Capability = { title: string; desc: string };
 const capabilities: Capability[] = [
   {
     title: "Custom processes and workflows",
-    desc: "I design how work should actually flow, then document it so it sticks. Less chaos, fewer dropped balls, more output from the same team.",
+    desc: "Work flows the way it should. Fewer dropped balls, faster handoffs, more output from the team you already have.",
   },
   {
     title: "Automation and AI",
-    desc: "I put the repetitive work on autopilot with automation and AI, so your people spend their time on what genuinely needs a human.",
+    desc: "The repetitive work runs itself, so your people spend their energy on what actually needs a human.",
   },
   {
     title: "Tool and platform integration",
-    desc: "I connect and configure the platforms you rely on, from CRM to operations tooling, so your data and your teams finally stay in sync.",
+    desc: "Your CRM, your ops stack, your data. Connected, synced, and finally telling the same story.",
   },
   {
     title: "Systems simplification",
-    desc: "Too many tools and too many tabs? I consolidate and streamline your stack so it is cheaper, calmer, and faster to run.",
+    desc: "Fewer tools, fewer tabs, lower bills. A stack that is calmer, cheaper, and faster to run.",
   },
   {
     title: "Building and scaling teams",
-    desc: "I help stand up and structure new departments and functions, with the processes and tools they need to perform from day one.",
+    desc: "New departments stood up right the first time, with the processes and tools to perform from day one.",
   },
   {
     title: "Customer experience and journey",
-    desc: "I map and rebuild the customer and user journey so every touchpoint feels intentional, smooth, and worth coming back to.",
+    desc: "Every touchpoint intentional. A journey so smooth your customers come back just because it is easy.",
   },
 ];
 
@@ -44,10 +44,11 @@ export default function Capabilities() {
           label="What I build"
           title={
             <>
-              Real work, <span className="text-burnt">not just advice</span>
+              Built by hand,{" "}
+              <span className="text-burnt">proven in the field</span>
             </>
           }
-          desc="Over the years I have helped businesses in all of these ways, hands on and shoulder to shoulder with their teams. Here is where I do my best work."
+          desc="None of this is theory. It is work I have delivered for real businesses, again and again, for two decades."
         />
 
         <SwipeHint />
@@ -63,15 +64,15 @@ export default function Capabilities() {
             <motion.div
               key={c.title}
               variants={fadeUp}
-              className="group border-t border-ink/25 pt-6 max-sm:flex max-sm:w-[80vw] max-sm:shrink-0 max-sm:snap-start max-sm:flex-col max-sm:border max-sm:border-ink/15 max-sm:bg-cream max-sm:p-6"
+              className="group border-t border-ink/25 pt-6 max-sm:flex max-sm:w-[80vw] max-sm:shrink-0 max-sm:snap-start max-sm:flex-col max-sm:rounded-2xl max-sm:border max-sm:border-ink/15 max-sm:bg-cream max-sm:p-6"
             >
               <div className="flex items-baseline justify-between">
                 <span className="font-display text-sm font-semibold text-burnt max-sm:text-3xl">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <span className="h-2 w-2 bg-ink/20 transition-colors duration-300 group-hover:bg-burnt max-sm:bg-burnt" />
+                <span className="h-2 w-2 rounded-full bg-ink/20 transition-colors duration-300 group-hover:bg-burnt max-sm:bg-burnt" />
               </div>
-              <h3 className="mt-4 font-display text-2xl font-semibold leading-tight text-ink max-sm:mt-6">
+              <h3 className="mt-4 font-display text-2xl font-medium leading-tight tracking-[-0.01em] text-ink max-sm:mt-6">
                 {c.title}
               </h3>
               <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">

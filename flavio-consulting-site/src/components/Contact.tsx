@@ -32,13 +32,12 @@ export default function Contact() {
           <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-cream/60">
             07 · Let's talk
           </span>
-          <h2 className="mt-6 font-display text-5xl font-semibold uppercase leading-[0.95] tracking-[-0.01em] text-cream sm:text-7xl">
+          <h2 className="mt-6 font-display text-5xl font-medium leading-[1.02] tracking-[-0.02em] text-cream sm:text-6xl">
             Ready to work smarter?
           </h2>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/80">
-            Book a free, zero pressure strategy call. We will talk through where
-            you are stuck and whether I can help. You will leave with at least
-            one idea worth acting on.
+            One free call. Zero pressure. You will leave with at least one idea
+            worth acting on, whether we end up working together or not.
           </p>
 
           <a
@@ -57,7 +56,7 @@ export default function Contact() {
             <motion.div
               initial={{ opacity: 0, scale: 0.97 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="flex h-full flex-col items-start justify-center border border-cream/25 p-10"
+              className="flex h-full flex-col items-start justify-center rounded-2xl border border-cream/25 p-10"
             >
               <CheckCircle2 size={40} className="text-cream" />
               <h3 className="mt-5 font-display text-2xl font-semibold text-cream">
@@ -90,7 +89,7 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="group inline-flex w-full items-center justify-center gap-3 bg-cream px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-burnt-dark transition-colors duration-300 hover:bg-ink hover:text-cream sm:w-auto"
+                className="group inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-cream px-7 py-3.5 text-sm font-semibold text-burnt-dark transition-colors duration-300 hover:bg-ink hover:text-cream sm:w-auto"
               >
                 Send message
                 <ArrowRight

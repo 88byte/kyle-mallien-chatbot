@@ -4,10 +4,10 @@ import { motion, useInView, animate } from "framer-motion";
 type Stat = { value: number; suffix: string; label: string };
 
 const stats: Stat[] = [
-  { value: 20, suffix: "+", label: "Years turning complexity into simple systems" },
-  { value: 40, suffix: "%", label: "Less manual busywork once automation is in place" },
-  { value: 3, suffix: "x", label: "Faster delivery with the right systems behind you" },
-  { value: 100, suffix: "%", label: "Senior led. You work directly with me, start to finish" },
+  { value: 20, suffix: "+", label: "Years building systems for real businesses" },
+  { value: 40, suffix: "%", label: "Less manual busywork after automation lands" },
+  { value: 3, suffix: "x", label: "Faster delivery once the right systems are in" },
+  { value: 100, suffix: "%", label: "Senior led. You work with me, start to finish" },
 ];
 
 function Counter({ value, suffix }: { value: number; suffix: string }) {
@@ -47,7 +47,7 @@ export default function Stats() {
               transition={{ delay: i * 0.08, duration: 0.6 }}
               className="border-t-2 border-ink pt-5"
             >
-              <div className="font-display text-6xl font-semibold tracking-tight text-burnt sm:text-7xl">
+              <div className="font-display text-5xl font-medium tracking-tight text-burnt sm:text-6xl">
                 <Counter value={s.value} suffix={s.suffix} />
               </div>
               <p className="mt-3 max-w-[15rem] text-sm leading-relaxed text-ink-soft">

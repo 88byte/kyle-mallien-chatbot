@@ -20,7 +20,7 @@ export default function Marquee() {
           {row.map((c, i) => (
             <span
               key={i}
-              className={`whitespace-nowrap font-display text-4xl font-semibold uppercase tracking-tight sm:text-5xl ${
+              className={`whitespace-nowrap font-display text-3xl font-medium tracking-tight sm:text-4xl ${
                 i % 2 === 0 ? "text-ink" : "text-stroke-burnt"
               }`}
             >

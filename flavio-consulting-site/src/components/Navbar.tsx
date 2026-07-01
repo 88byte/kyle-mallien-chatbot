@@ -39,7 +39,7 @@ export default function Navbar() {
         <nav className="container-page flex h-[4.5rem] items-center justify-between">
           <a href="#top" className="flex items-center gap-3" aria-label="Home">
             <Logo className="h-8 w-8" />
-            <span className="font-display text-sm font-semibold uppercase tracking-[0.14em] text-ink">
+            <span className="font-display text-base font-semibold tracking-tight text-ink">
               Flavio DeOliveira
             </span>
           </a>
@@ -49,7 +49,7 @@ export default function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-[11px] font-semibold uppercase tracking-[0.2em] text-ink-soft transition-colors hover:text-burnt"
+                className="text-sm font-medium text-ink-soft transition-colors hover:text-burnt"
               >
                 {l.label}
               </a>
