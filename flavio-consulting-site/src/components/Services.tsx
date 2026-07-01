@@ -60,22 +60,28 @@ export default function Services() {
             key={s.tag}
             href="#contact"
             variants={fadeUp}
-            className="group block border-t border-ink/20 transition-colors duration-300 hover:bg-ink"
+            className="group block border-t border-ink/20 transition-colors duration-300 hover:bg-ink max-sm:border-cream/10 max-sm:bg-ink"
           >
-            <div className="container-page grid gap-4 py-10 sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-10 sm:py-12">
-              <span className="font-display text-sm font-semibold text-burnt">
+            <div className="container-page grid gap-4 py-10 max-sm:py-12 sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-10 sm:py-12">
+              <span className="font-display text-sm font-semibold text-burnt max-sm:text-base">
                 0{i + 1}
               </span>
               <div>
-                <h3 className="font-display text-4xl font-semibold uppercase tracking-tight text-ink transition-colors duration-300 group-hover:text-cream sm:text-6xl">
+                <h3 className="font-display text-4xl font-semibold uppercase tracking-tight text-ink transition-colors duration-300 group-hover:text-cream max-sm:text-[13vw] max-sm:leading-none max-sm:text-cream sm:text-6xl">
                   {s.tag}
                 </h3>
-                <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-ink-soft transition-colors duration-300 group-hover:text-cream/75">
+                <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-ink-soft transition-colors duration-300 group-hover:text-cream/75 max-sm:mt-4 max-sm:text-cream/70">
                   {s.desc}
                 </p>
-                <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-ink-mute transition-colors duration-300 group-hover:text-burnt">
+                <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-ink-mute transition-colors duration-300 group-hover:text-burnt max-sm:hidden">
                   {s.points.join("  ·  ")}
                 </p>
+                <span className="mt-6 hidden items-center gap-3 text-[11px] font-bold uppercase tracking-[0.2em] text-cream max-sm:inline-flex">
+                  <span className="flex h-8 w-8 items-center justify-center bg-burnt text-cream">
+                    <ArrowUpRight size={15} />
+                  </span>
+                  Start here
+                </span>
               </div>
               <span className="hidden h-14 w-14 items-center justify-center border border-ink/25 text-ink transition-all duration-300 group-hover:border-burnt group-hover:bg-burnt group-hover:text-cream sm:flex">
                 <ArrowUpRight size={22} />

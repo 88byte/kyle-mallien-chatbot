@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
+import SwipeHint from "./SwipeHint";
 import { fadeUp, stagger } from "../lib/motion";
 
 type Step = { title: string; desc: string };
@@ -38,23 +39,25 @@ export default function Process() {
           desc="A proven, transparent process so you always know what is happening and why it matters."
         />
 
+        <SwipeHint />
+
         <motion.div
           variants={stagger(0.12)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-16 grid gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-4"
+          className="no-scrollbar max-sm:-mx-6 max-sm:mt-4 max-sm:flex max-sm:snap-x max-sm:snap-mandatory max-sm:gap-4 max-sm:overflow-x-auto max-sm:px-6 max-sm:pb-3 sm:mt-16 sm:grid sm:grid-cols-2 sm:gap-x-10 sm:gap-y-14 lg:grid-cols-4"
         >
           {steps.map((s, i) => (
             <motion.div
               key={s.title}
               variants={fadeUp}
-              className="group border-t border-ink/25 pt-6 transition-colors duration-300 hover:border-burnt"
+              className="group border-t border-ink/25 pt-6 transition-colors duration-300 hover:border-burnt max-sm:w-[74vw] max-sm:shrink-0 max-sm:snap-start max-sm:border max-sm:border-ink/15 max-sm:bg-paper max-sm:p-6"
             >
-              <span className="font-display text-7xl font-semibold leading-none text-ink/15 transition-colors duration-300 group-hover:text-burnt">
+              <span className="font-display text-7xl font-semibold leading-none text-ink/15 transition-colors duration-300 group-hover:text-burnt max-sm:text-burnt">
                 {i + 1}
               </span>
-              <h3 className="mt-5 font-display text-xl font-semibold uppercase tracking-tight text-ink">
+              <h3 className="mt-5 font-display text-xl font-semibold uppercase tracking-tight text-ink max-sm:mt-7">
                 {s.title}
               </h3>
               <p className="mt-2.5 text-sm leading-relaxed text-ink-soft">

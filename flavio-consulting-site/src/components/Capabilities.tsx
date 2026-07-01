@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
+import SwipeHint from "./SwipeHint";
 import { fadeUp, stagger } from "../lib/motion";
 
 type Capability = { title: string; desc: string };
@@ -49,26 +50,28 @@ export default function Capabilities() {
           desc="Over the years I have helped businesses in all of these ways, hands on and shoulder to shoulder with their teams. Here is where I do my best work."
         />
 
+        <SwipeHint />
+
         <motion.div
           variants={stagger(0.08)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.15 }}
-          className="mt-16 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
+          className="no-scrollbar max-sm:-mx-6 max-sm:mt-4 max-sm:flex max-sm:snap-x max-sm:snap-mandatory max-sm:gap-4 max-sm:overflow-x-auto max-sm:px-6 max-sm:pb-3 sm:mt-16 sm:grid sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12 lg:grid-cols-3"
         >
           {capabilities.map((c, i) => (
             <motion.div
               key={c.title}
               variants={fadeUp}
-              className="group border-t border-ink/25 pt-6"
+              className="group border-t border-ink/25 pt-6 max-sm:flex max-sm:w-[80vw] max-sm:shrink-0 max-sm:snap-start max-sm:flex-col max-sm:border max-sm:border-ink/15 max-sm:bg-cream max-sm:p-6"
             >
               <div className="flex items-baseline justify-between">
-                <span className="font-display text-sm font-semibold text-burnt">
+                <span className="font-display text-sm font-semibold text-burnt max-sm:text-3xl">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <span className="h-2 w-2 bg-ink/20 transition-colors duration-300 group-hover:bg-burnt" />
+                <span className="h-2 w-2 bg-ink/20 transition-colors duration-300 group-hover:bg-burnt max-sm:bg-burnt" />
               </div>
-              <h3 className="mt-4 font-display text-2xl font-semibold leading-tight text-ink">
+              <h3 className="mt-4 font-display text-2xl font-semibold leading-tight text-ink max-sm:mt-6">
                 {c.title}
               </h3>
               <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">
