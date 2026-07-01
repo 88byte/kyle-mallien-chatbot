@@ -4,10 +4,11 @@ import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 
 const links = [
-  { label: "Services", href: "#services" },
+  { label: "How I help", href: "#services" },
+  { label: "What I build", href: "#capabilities" },
   { label: "Process", href: "#process" },
-  { label: "Results", href: "#results" },
   { label: "About", href: "#about" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 export default function Navbar() {

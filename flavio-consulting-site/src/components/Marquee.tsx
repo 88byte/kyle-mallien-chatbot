@@ -1,14 +1,14 @@
 const capabilities = [
+  "Custom Processes",
   "Workflow Automation",
   "AI Integration",
-  "CRM Strategy",
-  "Process Optimization",
-  "LLM Solutions",
-  "Systems Design",
-  "Team Enablement",
-  "Operational Audits",
-  "Tool Integration",
-  "Strategic Advisory",
+  "Platform Integration",
+  "CRM Setup",
+  "Systems Simplification",
+  "Department Building",
+  "Customer Experience",
+  "User Journey Design",
+  "Operational Strategy",
 ];
 
 export default function Marquee() {

@@ -97,14 +97,14 @@ export default function Services() {
     <section id="services" className="relative scroll-mt-24 py-24 sm:py-32">
       <div className="container-page">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">What I do</span>
+          <span className="eyebrow">How I help</span>
           <h2 className="mt-5 font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
-            Three ways to move your{" "}
-            <span className="text-burnt">business forward</span>
+            Three ways we can{" "}
+            <span className="text-burnt">work together</span>
           </h2>
           <p className="mt-4 text-ink-soft">
             Whether you need a sharp diagnosis, a sharper team, or a system built
-            from scratch, we meet you exactly where you are.
+            from scratch, we start exactly where you are and go from there.
           </p>
         </Reveal>
 

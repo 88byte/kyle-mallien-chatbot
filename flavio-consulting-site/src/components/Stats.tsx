@@ -5,10 +5,10 @@ import Reveal from "./Reveal";
 type Stat = { value: number; suffix: string; label: string };
 
 const stats: Stat[] = [
-  { value: 20, suffix: "+", label: "Years across SaaS, AI, and hardware" },
-  { value: 40, suffix: "%", label: "Typical reduction in manual busywork" },
-  { value: 3, suffix: "x", label: "Faster delivery after workflow redesign" },
-  { value: 2023, suffix: "", label: "Founded, independent and senior led" },
+  { value: 20, suffix: "+", label: "Years turning complexity into simple systems" },
+  { value: 40, suffix: "%", label: "Less manual busywork once automation is in place" },
+  { value: 3, suffix: "x", label: "Faster delivery with the right systems behind you" },
+  { value: 100, suffix: "%", label: "Senior led. You work directly with me, start to finish" },
 ];
 
 function Counter({ value, suffix }: { value: number; suffix: string }) {

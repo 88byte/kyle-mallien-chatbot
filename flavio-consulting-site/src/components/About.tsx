@@ -4,10 +4,10 @@ import Reveal from "./Reveal";
 import Portrait from "./Portrait";
 
 const highlights = [
-  "A senior, hands on partner, never a junior handoff",
-  "Cross industry pattern recognition from SaaS to spatial computing",
-  "Pragmatic about tech: the right tool, not the trendy one",
-  "Outcome obsessed, measured in time and money saved",
+  "A senior partner who does the work, never a junior handoff",
+  "Two decades across SaaS, hardware, AI, and spatial computing",
+  "Equally at home in strategy, in the weeds, and in the build",
+  "Measured in time saved, money saved, and experiences improved",
 ];
 
 export default function About() {
@@ -41,15 +41,17 @@ export default function About() {
             <span className="text-burnt">competitive advantage</span>
           </h2>
           <p className="mt-5 leading-relaxed text-ink-soft">
-            I have spent over 20 years inside the rooms where technology meets the
-            real business problem. From scaling SaaS at Citrix to pioneering
-            spatial computing at Magic Leap, and helping startups find their feet.
-            Flavio DeOliveira Consulting brings that experience directly to you.
+            I have spent over 20 years inside fast moving companies, from scaling
+            SaaS at Citrix to pioneering spatial computing at Magic Leap, and
+            helping startups find their footing. Along the way I have built custom
+            processes and tools, stood up new departments, integrated platforms,
+            automated the busywork, and rebuilt customer journeys that were
+            quietly costing teams their growth.
           </p>
           <p className="mt-4 leading-relaxed text-ink-soft">
-            No bloated decks. No armies of consultants. Just a senior partner who
-            rolls up his sleeves, finds what is actually broken, and builds what
-            actually works.
+            I am not a slide deck consultant. I am the person who gets in, figures
+            out what is really going on, and builds the fix with your team.
+            Senior, hands on, and focused on outcomes you can actually measure.
           </p>
 
           <ul className="mt-7 space-y-3">

@@ -17,7 +17,7 @@ export default function Hero() {
             animate="show"
           >
             <motion.span variants={fadeUp} className="eyebrow">
-              Technology · Strategy · Automation
+              Systems · Automation · Operations
             </motion.span>
 
             <motion.h1
@@ -33,9 +33,10 @@ export default function Hero() {
               variants={fadeUp}
               className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft"
             >
-              I help ambitious teams transform how they operate. We cut waste,
-              modernize workflows, and build AI powered systems that turn
-              operational chaos into a real competitive edge.
+              For over 20 years I have helped companies build the processes,
+              tools, and teams that make growth feel effortless. I find what is
+              slowing you down, then design and build the systems that fix it for
+              good.
             </motion.p>
 
             <motion.div
