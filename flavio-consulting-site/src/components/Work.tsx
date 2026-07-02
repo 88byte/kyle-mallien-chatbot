@@ -11,28 +11,28 @@ type Project = {
 
 const projects: Project[] = [
   {
-    org: "Tin Drum",
-    role: "Head of Experience",
-    title: "The world's first touring XR concert",
-    desc: "Directed strategy and operations for XR performances and art installations across the globe. Over 400 devices, more than 10 shows a day, and audiences moved seamlessly through every venue, city after city.",
+    org: "Private client",
+    role: "Fractional CTO, CXO, and VP of Inside Sales and Operations · Present",
+    title: "Executive leadership for a national brand",
+    desc: "For a fast growing brand in personal development, I run technology, customer experience, inside sales, and operations as one connected system. AI assistants that capture and qualify leads, automation across the marketing and sales stack, and the operating rhythm that turns a growing audience into revenue.",
   },
   {
-    org: "Magic Leap",
-    role: "Experience, Systems, and Solutions",
-    title: "Spatial computing at Olympic scale",
-    desc: "Directed large scale XR experiences for the Olympics, delivered the platform at more than 100 major events and executive showings worldwide, and supported strategic partnerships valued at over 500 million dollars.",
+    org: "Tin Drum",
+    role: "Head of Experience",
+    title: "Operations that repeat flawlessly at scale",
+    desc: "Designed the systems, processes, and customer journey that let a complex, device heavy product run perfectly in city after city worldwide. Refining the flow raised throughput and revenue per session.",
   },
   {
     org: "Talespin",
     role: "VP of Experience",
-    title: "Immersive learning for 300,000+ users",
-    desc: "Built the enablement engine behind hundreds of enterprise customers across VR, AR, desktop, and mobile. Seventy five percent retention and programs behind multimillion dollar recurring revenue.",
+    title: "A customer experience engine for 300,000+ users",
+    desc: "Built the onboarding, enablement, and customer success operation behind hundreds of enterprise customers. Seventy five percent retention and programs behind multimillion dollar recurring revenue.",
   },
   {
-    org: "Private client",
-    role: "Systems and AI Partner, Present",
-    title: "The engine behind a touring speaker brand",
-    desc: "For a fast growing brand in live events and personal development, I build and run the machinery behind the scenes. AI assistants that capture and qualify leads, automation across the marketing and sales stack, and the operations that keep a national audience engaged.",
+    org: "Magic Leap",
+    role: "Experience, Systems, and Solutions",
+    title: "Turning frontier technology into business value",
+    desc: "Translated a brand new platform into real deployments for Fortune 500 partners. Built customer programs, executive briefing experiences, and solutions that supported partnerships valued at over 500 million dollars.",
   },
 ];
 
@@ -45,11 +45,11 @@ export default function Work() {
           label="Selected work"
           title={
             <>
-              Experiences most people{" "}
-              <span className="text-burnt">only read about</span>
+              The same skills,{" "}
+              <span className="text-burnt">proven at scale</span>
             </>
           }
-          desc="Customer experience, location based experiences, and live operations at global scale. A few highlights."
+          desc="Customer experience, systems, sales, and operations. Everything I offer here, I have already run at the highest level."
         />
 
         <motion.div

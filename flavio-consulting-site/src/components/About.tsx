@@ -42,11 +42,10 @@ export default function About() {
           </h2>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-ink-soft">
             I have spent my career in rooms where the stakes were high and the
-            systems had to hold. Live audiences on three continents, executive
-            briefings, product launches, platforms used by hundreds of thousands
-            of people. The job was always the same: design the experience, then
-            build the machinery underneath it that lets it run night after
-            night.
+            systems had to hold. Product launches, executive programs, sales
+            organizations, and platforms serving hundreds of thousands of
+            customers. The job was always the same: design the experience, then
+            build the machinery underneath it so it runs without me in the room.
           </p>
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-soft">
             That work taught me one thing above all: extraordinary experiences
