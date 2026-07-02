@@ -40,7 +40,7 @@ export default function Capabilities() {
     >
       <div className="container-page">
         <SectionHeader
-          number="03"
+          number="04"
           label="What I build"
           title={
             <>

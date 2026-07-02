@@ -29,7 +29,7 @@ export default function Process() {
     <section id="process" className="relative scroll-mt-24 py-24 sm:py-32">
       <div className="container-page">
         <SectionHeader
-          number="04"
+          number="05"
           label="How we work"
           title={
             <>

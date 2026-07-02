@@ -2,7 +2,7 @@ import Background from "./components/Background";
 import ScrollProgress from "./components/ScrollProgress";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Marquee from "./components/Marquee";
+import Work from "./components/Work";
 import Challenges from "./components/Challenges";
 import Services from "./components/Services";
 import Capabilities from "./components/Capabilities";
@@ -22,7 +22,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <Marquee />
+        <Work />
         <Challenges />
         <Services />
         <Capabilities />

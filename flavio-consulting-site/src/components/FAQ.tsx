@@ -71,7 +71,7 @@ export default function FAQ() {
       <div className="container-page">
         <Reveal>
           <div className="flex items-baseline justify-between border-t-2 border-ink pt-4">
-            <span className="font-display text-sm font-semibold text-burnt">06</span>
+            <span className="font-display text-sm font-semibold text-burnt">07</span>
             <span className="label">Questions</span>
           </div>
         </Reveal>

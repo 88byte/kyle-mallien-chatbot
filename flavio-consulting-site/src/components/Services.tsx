@@ -32,7 +32,7 @@ export default function Services() {
     <section id="services" className="relative scroll-mt-24 py-24 sm:py-32">
       <div className="container-page">
         <SectionHeader
-          number="02"
+          number="03"
           label="How I help"
           title={
             <>

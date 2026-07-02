@@ -1,4 +1,5 @@
 const links = [
+  { label: "Work", href: "#work" },
   { label: "How I help", href: "#services" },
   { label: "What I build", href: "#capabilities" },
   { label: "Process", href: "#process" },

@@ -30,7 +30,7 @@ export default function Contact() {
       <div className="container-page grid gap-14 py-24 sm:py-28 lg:grid-cols-2">
         <Reveal>
           <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-cream/60">
-            07 · Let's talk
+            08 · Let's talk
           </span>
           <h2 className="mt-6 font-display text-5xl font-semibold leading-[1.04] tracking-[-0.025em] text-cream sm:text-6xl">
             Ready to work smarter?

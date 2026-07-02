@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Portrait from "./Portrait";
 
-const clients = ["Citrix", "Magic Leap", "SaaS Scaleups", "AI Startups"];
+const clients = ["Magic Leap", "Tin Drum", "Talespin", "Fortune 500 partners"];
 
 const rise = (delay: number) => ({
   initial: { y: "110%" },
@@ -25,7 +25,7 @@ export default function Hero() {
         >
           <span className="h-2.5 w-2.5 rounded-full bg-burnt" />
           <span className="label !text-ink-soft">
-            Systems · Automation · Operations
+            Experience · Systems · Automation
           </span>
         </motion.div>
 
@@ -102,7 +102,7 @@ export default function Hero() {
             transition={{ delay: 0.62, duration: 0.7 }}
             className="hidden sm:block lg:pt-2"
           >
-            <p className="label">Over 20 years building with</p>
+            <p className="label">Trusted to deliver at</p>
             <ul className="mt-5 space-y-3">
               {clients.map((c) => (
                 <li

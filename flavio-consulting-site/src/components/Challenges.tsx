@@ -18,7 +18,7 @@ export default function Challenges() {
     <section id="challenges" className="relative scroll-mt-24 py-24 sm:py-32">
       <div className="container-page">
         <SectionHeader
-          number="01"
+          number="02"
           label="Sound familiar?"
           title={
             <>

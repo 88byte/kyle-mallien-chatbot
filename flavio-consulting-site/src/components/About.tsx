@@ -3,10 +3,10 @@ import Reveal from "./Reveal";
 import Portrait from "./Portrait";
 
 const highlights = [
-  "A senior partner who does the work, never a junior handoff",
-  "Two decades across SaaS, hardware, AI, and spatial computing",
-  "Equally at home in strategy, in the weeds, and in the build",
-  "Measured in time saved, money saved, and experiences improved",
+  "U.S. Navy veteran with two decades in emerging technology",
+  "Led experiences for the Olympics, Fortune 500s, and world tours",
+  "Built customer experience programs serving 300,000+ users",
+  "Senior and hands on. You work with me, start to finish",
 ];
 
 export default function About() {
@@ -15,7 +15,7 @@ export default function About() {
       <div className="container-page">
         <Reveal>
           <div className="flex items-baseline justify-between border-t-2 border-ink pt-4">
-            <span className="font-display text-sm font-semibold text-burnt">05</span>
+            <span className="font-display text-sm font-semibold text-burnt">06</span>
             <span className="label">About</span>
           </div>
         </Reveal>
@@ -41,16 +41,18 @@ export default function About() {
             <span className="text-burnt">advantage</span>
           </h2>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-ink-soft">
-            I have spent 20 plus years inside fast moving companies. Scaling SaaS
-            at Citrix. Pioneering spatial computing at Magic Leap. Helping
-            startups find their footing. Along the way I built processes, stood
-            up departments, connected platforms, automated busywork, and rebuilt
-            customer journeys that were quietly costing teams their growth.
+            For the last decade I have lived at the frontier of spatial
+            computing. I directed large scale XR experiences for the Olympics at
+            Magic Leap, built the customer experience engine behind 300,000 plus
+            users at Talespin, and led the world's first touring XR concert at
+            Tin Drum. Location based experiences, live events at global scale,
+            and the systems and processes that make them run night after night.
           </p>
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-soft">
-            I am not a slide deck consultant. I get in, find what is really going
-            on, and build the fix with your team. Senior, hands on, and measured
-            by results.
+            That work taught me one thing above all: extraordinary experiences
+            run on unglamorous systems. I bring both to your business. The
+            creative eye for customer experience, and the operational discipline
+            to make it repeatable.
           </p>
 
           <ul className="mt-10">
