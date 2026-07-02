@@ -5,8 +5,16 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Reveal from "./Reveal";
 
 const CONTACT_EMAIL = "flaviod022@gmail.com";
+const CALENDLY_URL =
+  "https://calendly.com/flaviod022/discovery-call-flavio-deoliveira" +
+  "?embed_domain=flaviodeoliveira.com&embed_type=Inline" +
+  "&hide_landing_page_details=1&hide_gdpr_banner=1" +
+  "&background_color=F7F3EC&text_color=191511&primary_color=9A3412";
+
+type Tab = "call" | "message";
 
 export default function Contact() {
+  const [tab, setTab] = useState<Tab>("call");
   const [sent, setSent] = useState(false);
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -27,7 +35,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative scroll-mt-24 bg-burnt-dark">
-      <div className="container-page grid gap-14 py-24 sm:py-28 lg:grid-cols-2">
+      <div className="container-page grid gap-14 py-24 max-sm:gap-10 sm:py-28 lg:grid-cols-[0.9fr_1.1fr]">
         <Reveal>
           <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-cream/60">
             08 · Let's talk
@@ -40,9 +48,12 @@ export default function Contact() {
             worth acting on, whether we end up working together or not.
           </p>
 
+          <p className="mt-10 text-[11px] font-semibold uppercase tracking-[0.25em] text-cream/60">
+            Prefer email?
+          </p>
           <a
             href={`mailto:${CONTACT_EMAIL}`}
-            className="mt-10 inline-block border-b-2 border-cream/40 pb-1 font-display text-xl font-medium text-cream transition-colors hover:border-cream sm:text-2xl"
+            className="mt-2 inline-block border-b-2 border-cream/40 pb-1 font-display text-xl font-medium text-cream transition-colors hover:border-cream sm:text-2xl"
           >
             {CONTACT_EMAIL}
           </a>
@@ -52,11 +63,46 @@ export default function Contact() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          {sent ? (
+          <div className="flex gap-2">
+            <TabButton active={tab === "call"} onClick={() => setTab("call")}>
+              Pick a time
+            </TabButton>
+            <TabButton
+              active={tab === "message"}
+              onClick={() => setTab("message")}
+            >
+              Send a message
+            </TabButton>
+          </div>
+
+          {tab === "call" ? (
+            <>
+              <div className="mt-5 overflow-hidden rounded-2xl bg-cream">
+                <iframe
+                  src={CALENDLY_URL}
+                  title="Book a discovery call with Flavio DeOliveira"
+                  className="h-[680px] w-full border-0 max-sm:h-[640px]"
+                  loading="lazy"
+                />
+              </div>
+              <p className="mt-3 text-xs text-cream/60">
+                Calendar not loading?{" "}
+                <a
+                  href="https://calendly.com/flaviod022/discovery-call-flavio-deoliveira"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline transition-colors hover:text-cream"
+                >
+                  Open it in a new tab
+                </a>
+                .
+              </p>
+            </>
+          ) : sent ? (
             <motion.div
               initial={{ opacity: 0, scale: 0.97 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="flex h-full flex-col items-start justify-center rounded-2xl border border-cream/25 p-10"
+              className="mt-5 flex flex-col items-start justify-center rounded-2xl border border-cream/25 p-10"
             >
               <CheckCircle2 size={40} className="text-cream" />
               <h3 className="mt-5 font-display text-2xl font-semibold text-cream">
@@ -68,14 +114,17 @@ export default function Contact() {
               </p>
             </motion.div>
           ) : (
-            <form onSubmit={onSubmit} className="space-y-8 lg:pt-4">
+            <form onSubmit={onSubmit} className="mt-8 space-y-8">
               <div className="grid gap-8 sm:grid-cols-2">
                 <Field name="name" label="Name" required />
                 <Field name="email" label="Email" type="email" required />
               </div>
               <Field name="company" label="Company" />
               <div>
-                <label htmlFor="message" className="mb-2 block text-[11px] font-semibold uppercase tracking-[0.25em] text-cream/60">
+                <label
+                  htmlFor="message"
+                  className="mb-2 block text-[11px] font-semibold uppercase tracking-[0.25em] text-cream/60"
+                >
                   What can I help with?
                 </label>
                 <textarea
@@ -108,6 +157,29 @@ export default function Contact() {
   );
 }
 
+function TabButton({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-colors duration-200 ${
+        active
+          ? "bg-cream text-burnt-dark"
+          : "border border-cream/30 text-cream hover:border-cream/60"
+      }`}
+    >
+      {children}
+    </button>
+  );
+}
+
 function Field({
   name,
   label,
@@ -121,7 +193,10 @@ function Field({
 }) {
   return (
     <div>
-      <label htmlFor={name} className="mb-2 block text-[11px] font-semibold uppercase tracking-[0.25em] text-cream/60">
+      <label
+        htmlFor={name}
+        className="mb-2 block text-[11px] font-semibold uppercase tracking-[0.25em] text-cream/60"
+      >
         {label}
         {required && <span className="text-cream"> *</span>}
       </label>
