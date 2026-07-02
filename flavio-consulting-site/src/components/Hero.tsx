@@ -59,6 +59,10 @@ export default function Hero() {
               tools, and build the automation that proves it. You get your hours
               back. Your business gets its momentum back.
             </p>
+            <p className="mt-4 max-w-md text-[15px] font-semibold text-burnt">
+              For founders, owners, and growing teams that have outgrown how
+              things get done.
+            </p>
             <div className="mt-8 flex flex-col gap-3 max-sm:mt-6 sm:flex-row">
               <a href="#contact" className="btn-primary group">
                 Book a free strategy call

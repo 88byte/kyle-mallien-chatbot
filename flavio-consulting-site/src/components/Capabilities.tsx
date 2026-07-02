@@ -41,7 +41,7 @@ export default function Capabilities() {
       <div className="container-page">
         <SectionHeader
           number="04"
-          label="What I build"
+          label="What I take off your plate"
           title={
             <>
               Built by hand,{" "}

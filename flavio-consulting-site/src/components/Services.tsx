@@ -13,7 +13,7 @@ const services: Service[] = [
   {
     tag: "Optimize",
     desc: "I audit how your business really runs and hand you a plan that pays for itself. Bottlenecks, busywork, and money leaks. Found, named, and fixed.",
-    points: ["Operational audits", "Process redesign", "Cost rationalization"],
+    points: ["Operational audits", "Process redesign", "Smarter spending"],
   },
   {
     tag: "Elevate",
@@ -23,7 +23,7 @@ const services: Service[] = [
   {
     tag: "Build",
     desc: "Systems that work while you sleep. CRMs, integrations, and AI automation built around how your business actually operates.",
-    points: ["CRM implementation", "AI and LLM integration", "Automation systems"],
+    points: ["CRM implementation", "AI integration", "Automation systems"],
   },
 ];
 
@@ -33,7 +33,7 @@ export default function Services() {
       <div className="container-page">
         <SectionHeader
           number="03"
-          label="How I help"
+          label="Ways to work with me"
           title={
             <>
               Three ways to{" "}

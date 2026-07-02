@@ -21,8 +21,8 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <Work />
         <Challenges />
+        <Work />
         <Services />
         <Capabilities />
         <Process />

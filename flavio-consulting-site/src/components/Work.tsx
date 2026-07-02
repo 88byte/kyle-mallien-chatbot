@@ -11,8 +11,8 @@ type Project = {
 
 const projects: Project[] = [
   {
-    org: "Private client",
-    role: "Fractional CTO, CXO, and VP of Inside Sales and Operations · Present",
+    org: "Current engagement",
+    role: "Technology, Experience, Sales, and Operations · Present",
     title: "Executive leadership for a national brand",
     desc: "For a fast growing brand in personal development, I run technology, customer experience, inside sales, and operations as one connected system. AI assistants that capture and qualify leads, automation across the marketing and sales stack, and the operating rhythm that turns a growing audience into revenue.",
   },
@@ -41,7 +41,7 @@ export default function Work() {
     <section id="work" className="relative scroll-mt-24 bg-paper py-24 sm:py-32">
       <div className="container-page">
         <SectionHeader
-          number="01"
+          number="02"
           label="Selected work"
           title={
             <>
@@ -49,7 +49,7 @@ export default function Work() {
               <span className="text-burnt">proven at scale</span>
             </>
           }
-          desc="Customer experience, systems, sales, and operations. Everything I offer here, I have already run at the highest level."
+          desc="Everything I offer here, I have already run at the highest level. The scale was different. The problems were yours."
         />
 
         <motion.div

@@ -19,6 +19,10 @@ const faqs: QA[] = [
     a: "With a free strategy call. We talk through where you are stuck, I share where I see the biggest wins, and if it is a fit we scope a first engagement together.",
   },
   {
+    q: "What does it cost?",
+    a: "It depends on scope, and you will know the number before we start. After the free call I propose a first engagement with a fixed price and clear deliverables. No open ended retainers and no surprise invoices. Most clients start small, see the return, then expand.",
+  },
+  {
     q: "What if my team is not technical?",
     a: "Even better. A big part of my job is making powerful tools feel simple. I handle the complexity and train your team so they stay confident long after the work is done.",
   },
