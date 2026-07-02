@@ -4,9 +4,9 @@ import Portrait from "./Portrait";
 
 const highlights = [
   "U.S. Navy veteran with two decades in emerging technology",
-  "Led experiences for the Olympics, Fortune 500s, and world tours",
-  "Built customer experience programs serving 300,000+ users",
-  "Senior and hands on. You work with me, start to finish",
+  "Operator first: strategy, execution, and training in one partner",
+  "Fluent across creative, technical, and business teams",
+  "Independent and senior. You work with me, start to finish",
 ];
 
 export default function About() {
@@ -41,12 +41,12 @@ export default function About() {
             <span className="text-burnt">advantage</span>
           </h2>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-ink-soft">
-            For the last decade I have lived at the frontier of spatial
-            computing. I directed large scale XR experiences for the Olympics at
-            Magic Leap, built the customer experience engine behind 300,000 plus
-            users at Talespin, and led the world's first touring XR concert at
-            Tin Drum. Location based experiences, live events at global scale,
-            and the systems and processes that make them run night after night.
+            I have spent my career in rooms where the stakes were high and the
+            systems had to hold. Live audiences on three continents, executive
+            briefings, product launches, platforms used by hundreds of thousands
+            of people. The job was always the same: design the experience, then
+            build the machinery underneath it that lets it run night after
+            night.
           </p>
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-soft">
             That work taught me one thing above all: extraordinary experiences

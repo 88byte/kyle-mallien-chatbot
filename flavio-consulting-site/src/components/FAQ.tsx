@@ -16,7 +16,7 @@ const faqs: QA[] = [
   },
   {
     q: "How do we get started?",
-    a: "With a free strategy call. We talk through where you are stuck, I share where I see the biggest wins, and if it is a fit we scope a first engagement together. No pressure and no obligation.",
+    a: "With a free strategy call. We talk through where you are stuck, I share where I see the biggest wins, and if it is a fit we scope a first engagement together.",
   },
   {
     q: "What if my team is not technical?",

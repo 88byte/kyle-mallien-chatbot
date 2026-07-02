@@ -48,7 +48,7 @@ export default function Capabilities() {
               <span className="text-burnt">proven in the field</span>
             </>
           }
-          desc="None of this is theory. It is work I have delivered for real businesses, again and again, for two decades."
+          desc="None of this is theory. It is work I have delivered for real businesses, over and over."
         />
 
         <SwipeHint />

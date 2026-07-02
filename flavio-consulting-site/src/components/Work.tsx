@@ -18,9 +18,9 @@ const projects: Project[] = [
   },
   {
     org: "Magic Leap",
-    role: "Sr. Producer, Experience and Systems",
+    role: "Experience, Systems, and Solutions",
     title: "Spatial computing at Olympic scale",
-    desc: "Directed the development of large scale XR experiences for the Olympics and delivered Magic Leap at more than 100 major events, conferences, and private showings worldwide.",
+    desc: "Directed large scale XR experiences for the Olympics, delivered the platform at more than 100 major events and executive showings worldwide, and supported strategic partnerships valued at over 500 million dollars.",
   },
   {
     org: "Talespin",
@@ -29,10 +29,10 @@ const projects: Project[] = [
     desc: "Built the enablement engine behind hundreds of enterprise customers across VR, AR, desktop, and mobile. Seventy five percent retention and programs behind multimillion dollar recurring revenue.",
   },
   {
-    org: "Magic Leap",
-    role: "Sr. Solutions Engineering",
-    title: "Half a billion dollars in partnerships",
-    desc: "Orchestrated strategic engagements and executive experiences, including the AT&T Executive Briefing Center, supporting partnerships valued at over 500 million dollars.",
+    org: "Private client",
+    role: "Systems and AI Partner, Present",
+    title: "The engine behind a touring speaker brand",
+    desc: "For a fast growing brand in live events and personal development, I build and run the machinery behind the scenes. AI assistants that capture and qualify leads, automation across the marketing and sales stack, and the operations that keep a national audience engaged.",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function Work() {
               <span className="text-burnt">only read about</span>
             </>
           }
-          desc="Two decades building customer experience, location based experiences, and the systems and processes that make them run. A few highlights."
+          desc="Customer experience, location based experiences, and live operations at global scale. A few highlights."
         />
 
         <motion.div

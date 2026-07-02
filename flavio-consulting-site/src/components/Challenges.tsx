@@ -26,7 +26,7 @@ export default function Challenges() {
               <span className="text-burnt">working together.</span>
             </>
           }
-          desc="Growing businesses rarely have a technology problem. They have a tangle problem. Too many tools, too much manual work, not enough time. If that sounds like home, you are in the right place."
+          desc="Growing businesses rarely have a technology problem. Too many tools, too much manual work, not enough time. If that sounds like home, you are in the right place."
         />
 
         <SwipeHint />

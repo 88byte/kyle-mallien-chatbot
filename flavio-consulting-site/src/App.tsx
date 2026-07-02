@@ -6,7 +6,6 @@ import Work from "./components/Work";
 import Challenges from "./components/Challenges";
 import Services from "./components/Services";
 import Capabilities from "./components/Capabilities";
-import Stats from "./components/Stats";
 import Process from "./components/Process";
 import About from "./components/About";
 import FAQ from "./components/FAQ";
@@ -26,7 +25,6 @@ export default function App() {
         <Challenges />
         <Services />
         <Capabilities />
-        <Stats />
         <Process />
         <About />
         <FAQ />
