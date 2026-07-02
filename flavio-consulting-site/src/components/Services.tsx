@@ -63,7 +63,7 @@ export default function Services() {
                 0{i + 1}
               </span>
               <div>
-                <h3 className="font-display text-4xl font-medium tracking-[-0.02em] text-ink transition-colors duration-300 group-hover:text-cream max-sm:text-[12vw] max-sm:leading-none max-sm:text-cream sm:text-5xl">
+                <h3 className="font-display text-4xl font-semibold tracking-[-0.025em] text-ink transition-colors duration-300 group-hover:text-cream max-sm:text-[12vw] max-sm:leading-none max-sm:text-cream sm:text-5xl">
                   {s.tag}
                 </h3>
                 <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-ink-soft transition-colors duration-300 group-hover:text-cream/75 max-sm:mt-4 max-sm:text-cream/70">

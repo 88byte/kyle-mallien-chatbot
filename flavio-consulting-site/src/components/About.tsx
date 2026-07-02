@@ -36,7 +36,7 @@ export default function About() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <h2 className="font-display text-4xl font-medium leading-[1.06] tracking-[-0.02em] text-ink sm:text-5xl">
+          <h2 className="font-display text-4xl font-semibold leading-[1.08] tracking-[-0.025em] text-ink sm:text-5xl">
             Two decades turning complexity into{" "}
             <span className="text-burnt">advantage</span>
           </h2>

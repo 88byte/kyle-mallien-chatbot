@@ -29,7 +29,7 @@ export default function Hero() {
           </span>
         </motion.div>
 
-        <h1 className="mt-8 font-display font-semibold leading-[0.98] tracking-[-0.02em] text-ink max-sm:mt-6">
+        <h1 className="mt-8 font-display font-semibold leading-[1.0] tracking-[-0.03em] text-ink max-sm:mt-6">
           <span className="block overflow-hidden">
             <motion.span
               className="block text-[14.5vw] sm:text-[9vw] lg:text-[7.5rem]"

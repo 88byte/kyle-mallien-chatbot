@@ -45,7 +45,7 @@ export default function Footer() {
               textLength="1200"
               lengthAdjust="spacingAndGlyphs"
               className="fill-cream font-display transition-colors duration-300 group-hover:fill-burnt"
-              style={{ fontSize: 130, fontWeight: 500, letterSpacing: "-0.02em" }}
+              style={{ fontSize: 130, fontWeight: 600, letterSpacing: "-0.02em" }}
             >
               Flavio DeOliveira
             </text>

@@ -32,7 +32,7 @@ export default function Contact() {
           <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-cream/60">
             07 · Let's talk
           </span>
-          <h2 className="mt-6 font-display text-5xl font-medium leading-[1.02] tracking-[-0.02em] text-cream sm:text-6xl">
+          <h2 className="mt-6 font-display text-5xl font-semibold leading-[1.04] tracking-[-0.025em] text-cream sm:text-6xl">
             Ready to work smarter?
           </h2>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/80">

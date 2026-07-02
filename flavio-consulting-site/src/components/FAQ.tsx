@@ -78,7 +78,7 @@ export default function FAQ() {
       </div>
       <div className="container-page mt-12 grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <Reveal>
-          <h2 className="font-display text-4xl font-medium leading-[1.06] tracking-[-0.02em] text-ink sm:text-5xl">
+          <h2 className="font-display text-4xl font-semibold leading-[1.08] tracking-[-0.025em] text-ink sm:text-5xl">
             Good to <span className="text-burnt">know</span>
           </h2>
           <p className="mt-6 max-w-sm leading-relaxed text-ink-soft">

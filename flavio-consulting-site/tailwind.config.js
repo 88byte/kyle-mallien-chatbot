@@ -19,8 +19,8 @@ export default {
         line: "#DDD3C2",
       },
       fontFamily: {
-        display: ["'Clash Display'", "system-ui", "sans-serif"],
-        sans: ["Satoshi", "system-ui", "sans-serif"],
+        display: ["Switzer", "system-ui", "sans-serif"],
+        sans: ["Switzer", "system-ui", "sans-serif"],
       },
       keyframes: {
         marquee: {

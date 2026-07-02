@@ -22,7 +22,7 @@ export default function SectionHeader({ number, label, title, desc }: Props) {
         <span className="label">{label}</span>
       </div>
       <div className="mt-10 max-w-3xl">
-        <h2 className="font-display text-4xl font-medium leading-[1.06] tracking-[-0.02em] text-ink sm:text-5xl">
+        <h2 className="font-display text-4xl font-semibold leading-[1.08] tracking-[-0.025em] text-ink sm:text-5xl">
           {title}
         </h2>
         {desc && (
